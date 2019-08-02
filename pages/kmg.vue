@@ -22,33 +22,35 @@
     </header>
 
     <section>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>
-            Your Name:
-            <input type="text" name="name" class="border" />
-          </label>
+      <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true">
+        <p class="form-element">
+          <label class="required">Naam</label>
+          <input type="text" name="name" placeholder="Naam" required />
         </p>
-        <p>
-          <label>
-            Your Email:
-            <input type="email" name="email" class="border" />
-          </label>
+        <p class="form-element">
+          <label class="required">E-mailadres</label>
+          <input type="email" name="email" placeholder="E-mailadres" required />
         </p>
-        <p>
-          <label>
-            Your Role:
-            <select name="role[]" multiple class="border">
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
+        <p class="form-element">
+          <label class="required">Geboortedatum</label>
+          <input type="text" name="dateofbirth" placeholder="Geboortedatum" required />
         </p>
-        <p>
-          <label>Message: <textarea name="message" class="border"></textarea></label>
+        <p class="form-element">
+          <label>Telefoonnummer</label>
+          <input type="text" name="phonenumber" placeholder="Telefoonnummer" />
         </p>
-        <p>
-          <button type="submit" class="border">Send</button>
+        <p class="form-element">
+          <label>Woonplaats</label>
+          <input type="text" name="city" placeholder="Woonplaats" />
+        </p>
+        <p class="form-element">
+          <label>Heb je verder nog vragen?</label>
+          <textarea name="remarks" placeholder="Opmerkingen of vragen"></textarea>
+        </p>
+        <p class="my-8 text-right">
+          <button type="submit" class="button-pink">
+            Aanmelden
+          </button>
         </p>
       </form>
     </section>
