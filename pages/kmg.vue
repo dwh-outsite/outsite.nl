@@ -22,7 +22,13 @@
     </header>
 
     <section>
-      <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true">
+      <form class="w-2/3 mx-auto my-12" name="kmg" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human:
+            <input name="bot-field" />
+          </label>
+        </p>
         <p class="form-element">
           <label class="required">Naam</label>
           <input type="text" name="name" placeholder="Naam" required />
