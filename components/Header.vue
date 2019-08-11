@@ -1,6 +1,6 @@
 <template>
   <div id="header" :class="[small ? 'header-small' : '', 'relative']">
-    <nav class="absolute z-50 w-full mt-8">
+    <nav class="absolute z-50 w-full pt-8">
       <div class="container px-4 mx-auto flex justify-between items-center">
         <a :href="localePath('index')">
           <OutsiteLogo class="h-16" />
@@ -48,7 +48,7 @@
       </div>
     </nav>
     <div class="hero">
-      <video autoplay muted loop class="hidden md:block w-full opacity-50">
+      <video autoplay muted loop class="hidden md:block w-full opacity-75">
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
       </video>
     </div>
@@ -98,8 +98,12 @@ export default {
   }
 }
 
+nav {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
 .hero {
-  @apply bg-gray-700 absolute w-full h-full overflow-hidden;
+  @apply bg-pink-400 absolute w-full h-full overflow-hidden;
   transform: skewY(-7deg);
   transform-origin: 0;
 }

@@ -2,10 +2,10 @@
   <div>
     <header>
       <Header>
-        <h1 class="text-4xl text-white font-normal">
+        <h1 class="text-4xl text-white font-normal" style="text-shadow: 0 2px 4px rgba(0,0,0,0.10);">
           {{ $t('hero.title') }}
         </h1>
-        <h2 class="text-2xl text-white mt-2 font-light">
+        <h2 class="text-2xl text-white mt-2 font-light" style="text-shadow: 0 2px 4px rgba(0,0,0,0.10);">
           {{ $t('hero.subtitle') }}
         </h2>
         <div class="mt-8 flex">
