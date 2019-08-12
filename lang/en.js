@@ -21,7 +21,7 @@ export default {
   ways_to_join: {
     title: 'Ready to check out <strong>Outsite</strong>?',
     kmg: {
-      title: 'Introduction Group (in dutch: KMG)',
+      title: 'Introduction Group (which we call: KMG)',
       description: `It is twice a year that Outsite organizes the introduction groups. These groups are a chance to not
       get to know the society but also to become close to other LGBT+ youth, all under supervision of two experienced
       Outsite members. It is a chance to share your coming out stories in a close group and to visit queer parties
