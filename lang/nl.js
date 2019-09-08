@@ -6,9 +6,10 @@ export default {
     rightButton: 'Bekijk video'
   },
   description: {
-    text: `Outsite is het onderdeel van DWH (Delftse Werkgroep Homoseksualiteit) speciaal voor jongeren. Wij zijn er
-      voor iedereen onder de 28 jaar die zich identificeert als LHBT+. Outsite organiseert allerlei activiteiten: van
-      een borrel elke donderdagavond en grote LHBT+ feesten elk kwartaal tot gezamenlijk uitgaan in andere steden. <br>
+    text: `Outsite is er voor iedereen onder de 28 jaar die zich identificeert als LHBT+. Er worden allerlei
+      activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
+      kwartaal tot gezamenlijk uitgaan in andere steden. Outsite is het deel van
+      <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a> dat zich richt op jongeren.<br>
       <br>
       Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
       kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
@@ -50,7 +51,7 @@ export default {
     bar_buddy: {
       title: 'Barbuddy Systeem',
       description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
-        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de 
+        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
         vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy'
@@ -86,7 +87,7 @@ export default {
     persoonlijke toestemming, worden kwesties aan hen voorgelegd.<br>
     <br>
     Wees niet bang om contact op te nemen. De vertrouwenspersoon zal elke kwestie serieus behandelen en is er om je te
-    helpen.    
+    helpen.
     `
   },
   forms: {
