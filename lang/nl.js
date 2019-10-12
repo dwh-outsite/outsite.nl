@@ -1,15 +1,15 @@
 export default {
   hero: {
-    title: 'Outsite LGBT+ vereniging',
-    subtitle: 'Delftse queer jongerenvereniging',
+    title: 'Outsite',
+    subtitle: `Delftse vereniging voor LHBT+ jongeren`,
     leftButton: 'Kom naar Outsite',
     rightButton: 'Bekijk video'
   },
   description: {
     text: `Outsite is er voor iedereen onder de 28 jaar die zich identificeert als LHBT+. Er worden allerlei
       activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
-      kwartaal tot gezamenlijk uitgaan in andere steden. Outsite is het deel van
-      <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a> dat zich richt op jongeren.<br>
+      kwartaal tot gezamenlijk uitgaan in andere steden. Outsite is onderdeel van
+      <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, de LHBT+ vereniging van Delft.<br>
       <br>
       Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
       kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
@@ -36,10 +36,10 @@ export default {
   ways_to_join: {
     title: 'Kennismaken met <strong>Outsite</strong>?',
     kmg: {
-      title: 'KennisMakingsGroepen (KMG)',
+      title: 'Kennismakingsgroepen (KMG)',
       description: `Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
-        van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Je deelt met elkaar je coming-out
-        verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
+        van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op acht donderdagavonden deel je met
+        elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
       next: `<strong>De KennisMakingsGroep van september is vol</strong>, maar maak je geen zorgen! In februari zal er
@@ -49,10 +49,11 @@ export default {
         vereniging kan vertellen en je kan voorstellen aan wat mensen.`
     },
     bar_buddy: {
-      title: 'Barbuddy Systeem',
-      description: `Wil jij een keertje langskomen op een baravond maar ben je bang dat je je niet meteen op je gemak
-        voelt? Meld je dan aan voor een barbuddy! Een barbuddy is iemand die jou de ins en outs kan vertellen over de
-        vereniging, maar ook iemand die jou voor kan stellen aan nieuwe mensen.`,
+      title: `Barbuddy's`,
+      description: `Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld
+      je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
+      baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten over
+      Outsite.`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy'
     }
