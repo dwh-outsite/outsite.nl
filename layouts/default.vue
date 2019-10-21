@@ -26,13 +26,11 @@
 <script>
 import Footer from '~/components/Footer'
 import BoardMember from '~/components/BoardMember'
-import JoinWhatsApp from '~/components/JoinWhatsApp'
 
 export default {
   components: {
     Footer,
-    BoardMember,
-    JoinWhatsApp
+    BoardMember
   }
 }
 </script>
