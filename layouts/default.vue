@@ -3,12 +3,6 @@
     <nuxt />
 
     <footer id="contact" class="bg-gray-700">
-      <JoinWhatsApp
-        :button-text="$t('footer.whatsapp.button')"
-        button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer"
-      >
-        <span v-html="$t('footer.whatsapp.description')" />
-      </JoinWhatsApp>
       <Footer
         :left-title="$t('footer.leftTitle')"
         :link-title="$t('confidential_counsellor.title')"
