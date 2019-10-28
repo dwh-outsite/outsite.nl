@@ -75,7 +75,7 @@
             <label class="required">{{ $t('forms.label.name') }}</label>
             <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
           </p>
-          <!-- <p class="form-element">
+          <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
               <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
@@ -89,7 +89,7 @@
               <input type="radio" name="language" value="no_preference" />
               {{ $t('forms.label.languages.no_preference') }}
             </label>
-          </p> -->
+          </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
             <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
@@ -102,7 +102,7 @@
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
           </p>
-          <!-- <p class="form-element">
+          <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
             <label class="radio">
               <input type="radio" name="barbuddy" value="no_preference" checked="true" />
@@ -112,7 +112,7 @@
               <input type="radio" name="barbuddy" :value="buddy.name" :checked="buddy.selected" />
               {{ buddy.name }}
             </label>
-          </p> -->
+          </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
