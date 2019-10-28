@@ -67,42 +67,30 @@
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <p class="hidden">
-            Don’t fill this out if you're human:
-            <input name="bot-field" />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.name') }}</label>
-            <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.language') }}</label>
-            <label class="radio">
-              <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
-              {{ $t('forms.label.languages.dutch') }}
-            </label>
-            <label class="radio">
-              <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
-              {{ $t('forms.label.languages.english') }}
-            </label>
-            <label class="radio">
-              <input type="radio" name="language" value="no_preference" />
-              {{ $t('forms.label.languages.no_preference') }}
-            </label>
-          </p>
-          <p class="form-element">
-            <label class="required">{{ $t('forms.label.email') }}</label>
-            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
-          </p>
-          <p class="form-element">
-            <label>{{ $t('forms.label.phone_number') }}</label>
-            <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
-          </p>
-          <p class="form-element">
-            <label>{{ $t('forms.label.pronouns') }}</label>
-            <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
-          </p>
-          <p class="form-element">
+          Don’t fill this out if you're human:
+          <input name="bot-field" />
+          <label class="required">{{ $t('forms.label.name') }}</label>
+          <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
+          <!-- <label class="required">{{ $t('forms.label.language') }}</label> -->
+          <!-- <label class="radio">
+            <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
+            {{ $t('forms.label.languages.dutch') }}
+          </label>
+          <label class="radio">
+            <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
+            {{ $t('forms.label.languages.english') }}
+          </label>
+          <label class="radio">
+            <input type="radio" name="language" value="no_preference" />
+            {{ $t('forms.label.languages.no_preference') }}
+          </label> -->
+          <label class="required">{{ $t('forms.label.email') }}</label>
+          <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
+          <label>{{ $t('forms.label.phone_number') }}</label>
+          <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
+          <label>{{ $t('forms.label.pronouns') }}</label>
+          <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+          <!-- <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
             <label class="radio">
               <input type="radio" name="barbuddy" value="no_preference" checked="true" />
@@ -112,16 +100,12 @@
               <input type="radio" name="barbuddy" :value="buddy.name" :checked="buddy.selected" />
               {{ buddy.name }}
             </label>
-          </p>
-          <p class="form-element">
-            <label>{{ $t('forms.label.remarks') }}</label>
-            <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
-          </p>
-          <p class="mt-8 md:my-8 text-right">
-            <button type="submit" class="button-pink">
-              {{ $t('forms.buttons.sign_up') }}
-            </button>
-          </p>
+          </p> -->
+          <label>{{ $t('forms.label.remarks') }}</label>
+          <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+          <button type="submit" class="button-pink">
+            {{ $t('forms.buttons.sign_up') }}
+          </button>
         </form>
       </div>
     </section>
