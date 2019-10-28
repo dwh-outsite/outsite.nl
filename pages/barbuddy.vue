@@ -68,10 +68,8 @@
           netlify-honeypot="bot-field"
         >
           <p class="hidden">
-            <label>
-              Don’t fill this out if you're human:
-              <input name="bot-field" />
-            </label>
+            Don’t fill this out if you're human:
+            <input name="bot-field" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
@@ -104,7 +102,7 @@
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
           </p>
-          <p class="form-element">
+          <!-- <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
             <label class="radio">
               <input type="radio" name="barbuddy" value="no_preference" checked="true" />
@@ -114,7 +112,7 @@
               <input type="radio" name="barbuddy" :value="buddy.name" :checked="buddy.selected" />
               {{ buddy.name }}
             </label>
-          </p>
+          </p> -->
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>

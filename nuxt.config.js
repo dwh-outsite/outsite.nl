@@ -3,7 +3,7 @@ import path from 'path'
 import pkg from './package'
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
    ** Headers of the page
