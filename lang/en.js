@@ -1,7 +1,7 @@
 export default {
   hero: {
-    title: 'Outsite',
-    subtitle: `Delft's association for LGBT+ youth`,
+    title: `Delft's LGBT+ Youth Association`,
+    subtitle: `for everyone up to 28 years`,
     leftButton: 'Join Outsite',
     rightButton: 'Watch video'
   },

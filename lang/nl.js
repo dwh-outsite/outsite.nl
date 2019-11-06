@@ -1,7 +1,7 @@
 export default {
   hero: {
-    title: 'Outsite',
-    subtitle: `Delftse vereniging voor LHBT+ jongeren`,
+    title: 'Deltse LHBT+ jongerenvereniging',
+    subtitle: `voor iedereen t/m 28 jaar`,
     leftButton: 'Kom naar Outsite',
     rightButton: 'Bekijk video'
   },
@@ -51,9 +51,9 @@ export default {
     bar_buddy: {
       title: `Barbuddy's`,
       description: `Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld
-      je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
-      baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten over
-      Outsite.`,
+        je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
+        baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten over
+        Outsite.`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy'
     }
