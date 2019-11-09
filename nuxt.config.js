@@ -155,6 +155,10 @@ export default {
         to: 'https://www.youtube.com/watch?v=YMMchSpbIJo'
       }, 
       {
+        from: '/band',
+        to: 'http://outsite.band'
+      },
+      {
         from: 'https://outsite.netlify.com/*',
         to: 'https://outsite.nl/:splat',
         status: '301!' 
