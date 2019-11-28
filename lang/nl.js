@@ -2,7 +2,7 @@ import barbuddies from '~/lang/nl_barbuddies.js'
 
 export default {
   hero: {
-    title: 'Deltse LHBT+ jongerenvereniging',
+    title: 'Delftse LHBT+ jongerenvereniging',
     subtitle: `voor iedereen t/m 28 jaar`,
     leftButton: 'Kom naar Outsite',
     rightButton: 'Bekijk video'
