@@ -30,13 +30,6 @@ export default {
   hadden we allemaal toen we voor het eerst het pand binnen stapten. Hopelijk kan ik het als barbuddy iets makkelijker
   voor je maken!
   `,
-  Robert: `
-  Hoi, ik ben Robert, 27, en heb aan de TU Computer Science gestudeerd. Ik hou van lekker eten, cocktails,
-  volleyballen, rokken die goed swirlen, dungeons & dragons spelen met vrienden en dagjes uit naar een spa. Verder ben
-  ik ondertussen al zo’n vier jaar lid bij DWH/Outsite. In die tijd heb ik hier een vriendje gevonden, ben ik veel
-  zekerder over hoe ik me identificeer en heb ik superlieve vrienden leren kennen. Het lijkt me altijd leuk nog meer
-  vrienden te maken en binnen de vereniging te introduceren!
-  `,
   Wessel: `
   Hey! Ik ben Wessel, 24 jaar en ik studeer Lucht- en Ruimtevaart Techniek. Toen ik via de KMG Outsite binnenkwam
   werd ik gelijk zo enthousiast gemaakt door de open sfeer en lieve mensen dat ik gelijk na de KMG me vol ben gaan
