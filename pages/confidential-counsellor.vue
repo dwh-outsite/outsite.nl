@@ -16,17 +16,31 @@
 
     <section class="bg-gray-200 py-4 md:pt-12 md:pb-24">
       <div class="mx-auto container px-4 flex justify-center">
-        <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg">
-          <h4 class="font-semibold text-xl">Andreas Zafiropoulos</h4>
-          <span class="text-gray-700">{{ $t('confidential_counsellor.title') }} Outsite</span>
-          <span class="mt-8 block flex">
-            <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
-              <Zondicon icon="envelope" class="fill-current w-4" />
-            </div>
-            <div class="ml-3">
-              vertrouwenspersoon@outsite.nl
-            </div>
-          </span>
+        <div>
+          <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg mb-12">
+            <h4 class="font-semibold text-xl">Andreas Zafiropoulos</h4>
+            <span class="text-gray-700">{{ $t('confidential_counsellor.title') }} Outsite</span>
+            <span class="mt-8 block flex">
+              <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
+                <Zondicon icon="envelope" class="fill-current w-4" />
+              </div>
+              <div class="ml-3">
+                vertrouwenspersoon-andreas@outsite.nl
+              </div>
+            </span>
+          </div>
+          <div class="bg-white rounded shadow-lg p-8 md:pr-48 text-lg">
+            <h4 class="font-semibold text-xl">Charissa</h4>
+            <span class="text-gray-700">{{ $t('confidential_counsellor.title') }} Outsite</span>
+            <span class="mt-8 block flex">
+              <div class="rounded-full w-8 h-8 p-2 bg-gray-700 text-white">
+                <Zondicon icon="envelope" class="fill-current w-4" />
+              </div>
+              <div class="ml-3">
+                vertrouwenspersoon-charissa@outsite.nl
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </section>
