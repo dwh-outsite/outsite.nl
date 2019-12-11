@@ -54,8 +54,8 @@ export default {
       title: `Barbuddy's`,
       description: `Wil jij een keertje langskomen op een baravond maar ben je nog niet bekend met de vereniging? Meld
         je dan aan voor een barbuddy! Een barbuddy is iemand die van tevoren met je afspreekt zodat je samen naar de
-        baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten over
-        Outsite.`,
+        baravond kunt gaan. Die kan je voorstellen aan de andere bezoekers en alles vertellen wat je maar wilt weten
+        over Outsite.`,
       action: 'Vind een barbuddy',
       sign_up: 'Aanmelden voor een barbuddy',
       meet_up_with: 'Afspreken met',
