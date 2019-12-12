@@ -104,6 +104,11 @@ export default {
     Video,
     EatingOut,
     Zondicon
+  },
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+    }
   }
 }
 </script>
