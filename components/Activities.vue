@@ -80,7 +80,7 @@ export default {
   components: { Zondicon },
   data() {
     return {
-      activities: activities: JSON.parse(JSON.stringify(activitiesFile))
+      activities: JSON.parse(JSON.stringify(activitiesFile))
         .data.sort((a, b) => a.start_time.localeCompare(b.start_time))
         .splice(0, 3)
     }
