@@ -8,7 +8,7 @@ export default {
     rightButton: 'Bekijk video'
   },
   description: {
-    text: `Outsite is er voor iedereen onder de 28 jaar die zich identificeert als LHBT+. Er worden allerlei
+    text: `Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
       activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
       kwartaal tot gezamenlijk uitgaan in andere steden. Outsite is onderdeel van
       <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, de LHBT+ vereniging van Delft.<br>
