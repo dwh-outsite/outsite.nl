@@ -142,14 +142,12 @@ export default {
   },
 
   netlify: {
-    redirects: [
-      createRedirects().concat([
-        {
-          from: 'https://outsite.netlify.com/*',
-          to: 'https://outsite.nl/:splat',
-          status: '301!'
-        }
-      ])
-    ]
+    redirects: createRedirects().concat([
+      {
+        from: 'https://outsite.netlify.com/*',
+        to: 'https://outsite.nl/:splat',
+        status: '301!'
+      }
+    ])
   }
 }
