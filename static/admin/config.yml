@@ -12,6 +12,7 @@ collections:
     folder: 'assets/content/redirects'
     create: true
     slug: '{{slug}}'
+    identifier_field: 'from'
     editor:
       preview: false
     fields:
