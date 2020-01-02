@@ -6,16 +6,15 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: 'redirects'
+    label: 'Redirects'
     format: 'json'
-    folder: 'assets/content/blog'
+    folder: 'assets/content/redirects'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'From', name: 'from', widget: 'string', hint: 'For example: /eatingout' }
+      - { label: 'To', name: 'to', widget: 'string', hint: 'For example: https://docs.google.com/forms/d/e/1FAIpQLScc8iucZ' }
+      - { label: 'Status Code', name: 'number', valueType: 'int', hint: 'For example: 301', required: false, widget: 'number' }

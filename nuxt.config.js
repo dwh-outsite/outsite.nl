@@ -1,6 +1,11 @@
 import path from 'path'
+import fs from 'fs'
 
 import pkg from './package'
+
+function createRedirects(directory = 'assets/content/redirects') {
+  return fs.readdirSync(directory).map(fileName => JSON.parse(fs.readFileSync(path.join(directory, fileName))))
+}
 
 export default {
   mode: 'universal',
@@ -137,32 +142,12 @@ export default {
   },
 
   netlify: {
-    redirects: [
-      {
-        from: '/outcamp',
-        to: 'https://docs.google.com/forms/d/e/1FAIpQLSdQkRhEQR3e3q_fnOkseETCB4fXYQE-ObFUkMHJM0sYwGBgYg/viewform'
-      },
-      {
-        from: '/outcamp-feedback',
-        to: 'https://docs.google.com/forms/d/e/1FAIpQLSf5AuHalc878zZiQDK5YEiCp-9qDZh1jPWMrJSGibN_cqhkrQ/viewform'
-      },
-      {
-        from: '/eatingout',
-        to: 'https://dwhdelft.nl/eatingout/'
-      }, 
-      {
-        from: '/song',
-        to: 'https://www.youtube.com/watch?v=YMMchSpbIJo'
-      }, 
-      {
-        from: '/band',
-        to: 'http://outsite.band'
-      },
+    redirects: createRedirects().concat([
       {
         from: 'https://outsite.netlify.com/*',
         to: 'https://outsite.nl/:splat',
-        status: '301!' 
+        status: '301!'
       }
-    ]
+    ])
   }
 }
