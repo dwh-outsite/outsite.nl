@@ -122,7 +122,7 @@
           </p>
           <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
-            <button type="submit" class="button-pink" :disabled="formStatus === 'loading'">
+            <button :disabled="formStatus === 'loading'" type="submit" class="button-pink">
               {{ formStatus === 'loading' ? $t('forms.buttons.loading') : $t('forms.buttons.sign_up') }}
             </button>
           </p>

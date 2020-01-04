@@ -45,7 +45,8 @@ module.exports = {
     }
   },
   variants: {
-    aspectRatio: ['responsive']
+    aspectRatio: ['responsive'],
+    backgroundColor: ['disabled']
   },
   plugins: [
     require('tailwind-heropatterns')({

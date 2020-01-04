@@ -129,7 +129,8 @@ export default {
     },
     success: {
       heading: 'Het formulier is succesvol verstuurd',
-      barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.'
+      barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.',
+      whatsapp: 'We voegen je zo snel mogelijk toe aan de groep!'
     }
   },
   footer: {
