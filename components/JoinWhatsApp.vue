@@ -10,8 +10,8 @@
 
           <div v-if="state == 'cta'" v-html="$t('footer.whatsapp.description')" />
 
-          <div v-if="state == 'form'" class="flex items-center text-base text-left w-full">
-            <p class="w-1/2 mx-2">
+          <div v-if="state == 'form'" class="md:flex items-center text-base text-left w-full">
+            <p class="md:w-1/2 mx-2">
               <label class="uppercase text-sm tracking-wide font-semibold block mb-1 required">
                 {{ $t('forms.label.name') }}
               </label>
@@ -23,7 +23,7 @@
                 required
               />
             </p>
-            <p class="w-1/2 ml-2">
+            <p class="md:w-1/2 ml-2">
               <label class="uppercase text-sm tracking-wide font-semibold block mb-1 required">
                 {{ $t('forms.label.phone_number') }}
               </label>
@@ -48,7 +48,7 @@
           type="button"
           class="
             bg-green-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
-            flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r 
+            flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto
           "
         >
           <div>{{ buttonText }}</div>
@@ -59,7 +59,7 @@
           type="submit"
           class="
             bg-green-400 h-full block px-8 text-white text-xl font-bold tracking-wider uppercase
-            flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r 
+            flex items-center justify-center py-2 rounded-b xl:rounded-b-none xl:rounded-r w-full xl:w-auto
             disabled:bg-green-300
           "
         >
