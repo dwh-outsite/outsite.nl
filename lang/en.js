@@ -45,11 +45,7 @@ export default {
       together and much more!`,
       action: 'Join the introduction group',
       sign_up: 'Sign up for the introduction group',
-      next: `<strong>The Introduction Group of September is full</strong>, but don’t worry! In February there will be
-      another Introduction Group starting. You can already register for that one, please let us know in the comments
-      that you would like to join that one. In the mean time you are ofcourse very welcome every Thursday from 10pm at
-      the regular bar evenings! You can also ask for a <a href="/en/barbuddy" class="text-pink-400">barbuddy</a> who can
-      show you around and introduce you to some people.`
+      next: `<strong>The Introduction Group of February will start soon</strong>, sign up now!`
     },
     bar_buddy: {
       title: 'Bar Buddies',
