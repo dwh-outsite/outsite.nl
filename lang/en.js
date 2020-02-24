@@ -41,11 +41,12 @@ export default {
       title: 'Introduction Group',
       description: `Twice a year we organise our introduction groups. These groups are a chance to not only get to know
       the association but also to become close to other LGBT+ youth, all under supervision of two experienced Outsite
-      members. During eight Thursday evenings, you will share coming out stories (if you want to), visit queer parties
+      members. During nine Thursday evenings, you will share coming out stories (if you want to), visit queer parties
       together and much more!`,
       action: 'Join the introduction group',
       sign_up: 'Sign up for the introduction group',
-      next: `<strong>The Introduction Group of February will start soon</strong>, sign up now!`
+      next: `<strong>The Introduction Group of February will start soon</strong>, sign up now! The KMG is open for young
+      adults between 17 and 28 years.`
     },
     bar_buddy: {
       title: 'Bar Buddies',
