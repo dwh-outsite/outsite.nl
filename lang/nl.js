@@ -41,11 +41,11 @@ export default {
       title: 'Kennismakingsgroepen (KMG)',
       description: `Twee keer per jaar organiseert Outsite de KMG. In een kennismakingsgroep maak je onder begeleiding
         van twee ervaren leden kennis met de vereniging maar vooral ook met elkaar. Op negen donderdagavonden deel je met
-        elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer! De KMG is bedoeld 
-        voor jongeren van 17 tot 28 jaar.`,
+        elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
-      next: `<strong>De KennisMakingsGroep van februari gaat binnenkort van start</strong>, meld je nu aan!`
+      next: `<strong>De KennisMakingsGroep van februari gaat binnenkort van start</strong>, meld je nu aan!
+        De KMG is bedoeld voor jongeren van 17 tot 28 jaar.`
     },
     bar_buddy: {
       title: `Barbuddy's`,
