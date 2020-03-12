@@ -61,13 +61,13 @@ import NLFlag from '@/assets/images/flags/nl.svg'
 import GBFlag from '@/assets/images/flags/gb.svg'
 
 export default {
-  props: ['small'],
   components: {
     OutsiteLogo,
     DWHLogo,
     NLFlag,
     GBFlag
   },
+  props: ['small'],
   mounted() {
     window.addEventListener('load', () => {
       document.getElementById('headervid').play()

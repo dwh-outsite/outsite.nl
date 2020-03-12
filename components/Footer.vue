@@ -29,13 +29,13 @@
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="envelope" class="fill-current w-4" />
             </div>
-            <div class="ml-3" v-html="contactEmail" />
+            <div v-html="contactEmail" class="ml-3" />
           </div>
           <div class="flex items-center">
             <div class="rounded-full w-8 h-8 p-2 bg-white text-gray-700">
               <Zondicon icon="map" class="fill-current w-4" />
             </div>
-            <div class="ml-3" v-html="contactAddress" />
+            <div v-html="contactAddress" class="ml-3" />
           </div>
         </div>
       </div>
@@ -87,16 +87,6 @@ import GitHubIcon from '@/assets/images/social/github.svg'
 import YouTubeIcon from '@/assets/images/social/youtube.svg'
 
 export default {
-  props: [
-    'left-title',
-    'right-title',
-    'link-title',
-    'link-destination',
-    'board-image',
-    'contact-email',
-    'contact-address',
-    'dwh-description'
-  ],
   components: {
     Zondicon,
     DWHLogo,
@@ -104,6 +94,16 @@ export default {
     FacebookIcon,
     GitHubIcon,
     YouTubeIcon
-  }
+  },
+  props: [
+    'leftTitle',
+    'rightTitle',
+    'linkTitle',
+    'linkDestination',
+    'boardImage',
+    'contactEmail',
+    'contactAddress',
+    'dwhDescription'
+  ]
 }
 </script>

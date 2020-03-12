@@ -1,4 +1,4 @@
-export default async function (to, from, savedPosition) {
+export default async function(to, from, savedPosition) {
   if (savedPosition) {
     return savedPosition
   }

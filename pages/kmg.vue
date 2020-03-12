@@ -11,7 +11,7 @@
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
         <p class="my-8 md:mt-0 md:mb-12">{{ $t('ways_to_join.kmg.description') }}</p>
-        <p class="mb-4 md:my-12" v-html="$t('ways_to_join.kmg.next')"></p>
+        <p v-html="$t('ways_to_join.kmg.next')" class="mb-4 md:my-12"></p>
       </div>
     </section>
 
@@ -35,32 +35,32 @@
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
-            <input type="text" name="name" :placeholder="$t('forms.placeholder.name')" required />
+            <input :placeholder="$t('forms.placeholder.name')" type="text" name="name" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
-            <input type="email" name="email" :placeholder="$t('forms.placeholder.email')" required />
+            <input :placeholder="$t('forms.placeholder.email')" type="email" name="email" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.date_of_birth') }}</label>
-            <input type="text" name="dateofbirth" :placeholder="$t('forms.placeholder.date_of_birth')" required />
+            <input :placeholder="$t('forms.placeholder.date_of_birth')" type="text" name="dateofbirth" required />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.phone_number') }}</label>
-            <input type="text" name="phonenumber" :placeholder="$t('forms.placeholder.phone_number')" />
+            <input :placeholder="$t('forms.placeholder.phone_number')" type="text" name="phonenumber" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.residence') }}</label>
-            <input type="text" name="city" :placeholder="$t('forms.placeholder.residence')" />
+            <input :placeholder="$t('forms.placeholder.residence')" type="text" name="city" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
             <label class="radio">
-              <input type="radio" name="language" value="dutch" :checked="$i18n.locale == 'nl'" />
+              <input :checked="$i18n.locale == 'nl'" type="radio" name="language" value="dutch" />
               {{ $t('forms.label.languages.dutch') }}
             </label>
             <label class="radio">
-              <input type="radio" name="language" value="english" :checked="$i18n.locale == 'en'" />
+              <input :checked="$i18n.locale == 'en'" type="radio" name="language" value="english" />
               {{ $t('forms.label.languages.english') }}
             </label>
             <label class="radio">
@@ -70,11 +70,11 @@
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
-            <input type="text" name="pronouns" :placeholder="$t('forms.placeholder.pronouns')" />
+            <input :placeholder="$t('forms.placeholder.pronouns')" type="text" name="pronouns" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
-            <textarea name="remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+            <textarea :placeholder="$t('forms.placeholder.remarks')" name="remarks"></textarea>
           </p>
           <p class="mt-8 md:my-8 text-right">
             <button type="submit" class="button-pink">

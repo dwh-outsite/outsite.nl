@@ -10,14 +10,14 @@
 
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="mt-8 mb-4 md:mt-0 md:mb-12" v-html="$t('ways_to_join.bar_buddy.description')" />
+        <p v-html="$t('ways_to_join.bar_buddy.description')" class="mt-8 mb-4 md:mt-0 md:mb-12" />
       </div>
     </section>
 
     <section class="bg-pink-200">
       <div class="container px-4 mx-auto pt-8 pb-12">
         <div class="text-center">
-          <h1 class="text-white font-medium text-5xl" v-html="$t('ways_to_join.bar_buddy.barbuddies_title')" />
+          <h1 v-html="$t('ways_to_join.bar_buddy.barbuddies_title')" class="text-white font-medium text-5xl" />
         </div>
         <div class="md:flex flex-wrap -mx-2 mt-2">
           <div v-for="buddy in barbuddies" :key="buddy.name" class="md:w-1/2 p-2">
@@ -31,7 +31,7 @@
                     {{ buddy.name }}
                   </h2>
                 </div>
-                <button class="button-pink flex items-center hidden md:flex" @click="meetWith(buddy)">
+                <button @click="meetWith(buddy)" class="button-pink flex items-center hidden md:flex">
                   {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
                   <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
                 </button>
@@ -39,13 +39,13 @@
               <p :class="['text-lg relative', buddy.readMore ? 'pb-8' : 'clamp-lines']">
                 <span class="absolute bottom-0 right-0 flex">
                   <span class="w-32 block white-gradient" />
-                  <a class="text-pink-400 bg-white cursor-pointer" @click="readMore(buddy)">
+                  <a @click="readMore(buddy)" class="text-pink-400 bg-white cursor-pointer">
                     {{ $t('ways_to_join.bar_buddy.' + (buddy.readMore ? 'read_less' : 'read_more')) }}
                   </a>
                 </span>
                 {{ buddy.bio }}
               </p>
-              <button class="button-pink flex items-center mt-4 flex md:hidden" @click="meetWith(buddy)">
+              <button @click="meetWith(buddy)" class="button-pink flex items-center mt-4 flex md:hidden">
                 {{ $t('ways_to_join.bar_buddy.meet_up_with') }} {{ buddy.name }}
                 <Zondicon icon="arrow-thin-right" class="ml-2 w-4 fill-current" />
               </button>
@@ -73,10 +73,10 @@
             </div>
           </div>
         </div>
-        <form v-if="formStatus !== 'finished'" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12" @submit="submit">
+        <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
-            <input v-model="form.name" type="text" :placeholder="$t('forms.placeholder.name')" required />
+            <input v-model="form.name" :placeholder="$t('forms.placeholder.name')" type="text" required />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
@@ -95,15 +95,15 @@
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
-            <input v-model="form.email" type="email" :placeholder="$t('forms.placeholder.email')" required />
+            <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.phone_number') }}</label>
-            <input v-model="form.phoneNumber" type="text" :placeholder="$t('forms.placeholder.phone_number')" />
+            <input v-model="form.phoneNumber" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
-            <input v-model="form.pronouns" type="text" :placeholder="$t('forms.placeholder.pronouns')" />
+            <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
@@ -112,7 +112,7 @@
               {{ $t('forms.label.languages.no_preference') }}
             </label>
             <label v-for="buddy in barbuddies" :key="buddy.name" class="radio">
-              <input v-model="form.barbuddy" type="radio" :value="buddy.name" :checked="buddy.selected" />
+              <input v-model="form.barbuddy" :value="buddy.name" :checked="buddy.selected" type="radio" />
               {{ buddy.name }}
             </label>
           </p>

@@ -53,8 +53,8 @@ import schedule from '~/assets/owee_schedule.csv'
 import OWeeLogo from '@/assets/images/owee_2019_logo.svg'
 
 export default {
-  props: ['title'],
   components: { OWeeLogo },
+  props: ['title'],
   data() {
     return {
       activities: schedule.map(row => {

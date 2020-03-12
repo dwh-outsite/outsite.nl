@@ -51,7 +51,7 @@
 
           <div v-if="state == 'success'" class="text-left">
             <span class="block leading-tight">{{ $t('forms.success.heading') }}</span>
-            <span class="block text-base" v-text="$t('forms.success.whatsapp')" />
+            <span v-text="$t('forms.success.whatsapp')" class="block text-base" />
           </div>
         </div>
         <button
@@ -89,11 +89,11 @@ import submitFormToFirebase from '~/modules/firebase-submitter'
 import WhatsAppLogo from '@/assets/images/whatsapp_logo.svg'
 
 export default {
-  props: ['button-text', 'button-target'],
   components: {
     WhatsAppLogo,
     Zondicon
   },
+  props: ['buttonText', 'buttonTarget'],
   data() {
     return {
       state: 'cta',

@@ -14,15 +14,15 @@
         :link-title="$t('confidential_counsellor.title')"
         :link-destination="localePath('confidential-counsellor')"
         :right-title="$t('footer.rightTitle')"
+        :dwh-description="$t('footer.dwhDescription')"
         contact-email="bestuur@outsite.nl"
         contact-address="Lange Geer 22<br />2611PV Delft"
-        :dwh-description="$t('footer.dwhDescription')"
       >
         <template v-slot:board-members>
-          <BoardMember name="Niv Bharos" :role="$t('footer.board.president')" email="voorzitter@outsite.nl" />
-          <BoardMember name="Ivo Brands" :role="$t('footer.board.secretary')" email="secretaris@outsite.nl" />
-          <BoardMember name="Bouke Stoelinga" :role="$t('footer.board.treasurer')" email="penningmeester@outsite.nl" />
-          <BoardMember name="Eva Pelk" :role="$t('footer.board.external_affairs')" email="extern@outsite.nl" />
+          <BoardMember :role="$t('footer.board.president')" name="Niv Bharos" email="voorzitter@outsite.nl" />
+          <BoardMember :role="$t('footer.board.secretary')" name="Ivo Brands" email="secretaris@outsite.nl" />
+          <BoardMember :role="$t('footer.board.treasurer')" name="Bouke Stoelinga" email="penningmeester@outsite.nl" />
+          <BoardMember :role="$t('footer.board.external_affairs')" name="Eva Pelk" email="extern@outsite.nl" />
         </template>
       </Footer>
     </footer>
