@@ -54,7 +54,7 @@ export default {
     'nuxt-i18n',
     'nuxt-purgecss',
     'nuxt-svg-loader',
-    '@bazzite/nuxt-netlify'
+    '@aceforth/nuxt-netlify'
   ],
 
   i18n: {
