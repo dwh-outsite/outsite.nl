@@ -1,7 +1,7 @@
 <template>
   <div class="container px-4 mx-auto pt-8 pb-12">
     <div class="text-center">
-      <h1 class="text-white font-medium text-5xl" v-html="title"></h1>
+      <h1 v-html="title" class="text-white font-medium text-5xl"></h1>
     </div>
     <div class="md:flex justify-center">
       <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-4">
@@ -52,6 +52,7 @@
 import Zondicon from 'vue-zondicons'
 
 export default {
+  components: { Zondicon },
   props: [
     'title',
     'leftIcon',
@@ -62,7 +63,6 @@ export default {
     'rightButtonText',
     'leftUrl',
     'rightUrl'
-  ],
-  components: { Zondicon }
+  ]
 }
 </script>

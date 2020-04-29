@@ -10,7 +10,7 @@
 
     <section class="container mx-auto pb-4 text-xl md:text-2xl leading-normal text-gray-800">
       <div class="md:w-2/3 mx-4 md:mx-auto">
-        <p class="mt-8 mb-4 md:mt-0 md:mb-12" v-html="$t('confidential_counsellor.description')" />
+        <p v-html="$t('confidential_counsellor.description')" class="mt-8 mb-4 md:mt-0 md:mb-12" />
       </div>
     </section>
 
