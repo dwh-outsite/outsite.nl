@@ -39,6 +39,18 @@ export default {
     Footer,
     BoardMember,
     JoinWhatsApp
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: 'Outsite' },
+        { hid: 'og:name', property: 'og:name', content: 'Outsite' },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Outsite' },
+        { hid: 'og:description', property: 'og:description', content: 'LHBT+ jongerenvereniging' },
+        { hid: 'description', property: 'description', content: 'LHBT+ jongerenvereniging' },
+        { hid: 'apple-mobile-web-app-title', property: 'apple-mobile-web-app-title', content: 'Outsite' }
+      ]
+    }
   }
 }
 </script>
