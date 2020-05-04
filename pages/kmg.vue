@@ -126,16 +126,13 @@ export default {
 
       this.formStatus = 'loading'
 
-      // TODO: CHANGE!!!
-      submitFormToFirebase('aaakmg@casperboone.nl', 'kmg', this.form)
+      submitFormToFirebase('kennismaken@dwhdelft.nl', 'kmg', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
-        .catch(e => {
+        .catch(() => {
           alert('An error occurred. If this keeps happening, please send us an email.')
-          // eslint-disable-next-line no-console
-          console.log(e)
         })
     }
   }
