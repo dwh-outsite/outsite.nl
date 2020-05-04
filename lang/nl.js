@@ -44,7 +44,7 @@ export default {
         met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
-      next: `<strong>De KennisMakingsGroep van februari gaat binnenkort van start</strong>, meld je nu aan!
+      next: `<strong>De volgende KennisMakingsGroep start in September</strong>, meld je nu aan!
         De KMG is bedoeld voor jongeren van 17 tot 28 jaar.`
     },
     bar_buddy: {
@@ -127,7 +127,8 @@ export default {
     success: {
       heading: 'Het formulier is succesvol verstuurd',
       barbuddy: 'Je barbuddy neemt zo snel mogelijk contact met je op.',
-      whatsapp: 'We voegen je zo snel mogelijk toe aan de groep!'
+      whatsapp: 'We voegen je zo snel mogelijk toe aan de groep!',
+      contact_soon: 'We nemen zo snel mogelijk contact met je op!'
     }
   },
   footer: {
