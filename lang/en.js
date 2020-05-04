@@ -129,7 +129,8 @@ export default {
     success: {
       heading: 'The form has been submitted successfully',
       barbuddy: 'The bar buddy you selected will contact you as soon as possible.',
-      whatsapp: `We'll add you to the group as soon as possible!`
+      whatsapp: `We'll add you to the group as soon as possible!`,
+      contact_soon: 'We will contact you as soon as possible.'
     }
   },
   footer: {
