@@ -88,8 +88,9 @@
 <script>
 import Zondicon from 'vue-zondicons'
 
-import Header from '~/components/Header'
 import Panda from '@/assets/images/outsite_panda_cropped.svg'
+
+import Header from '~/components/Header'
 import Activities from '~/components/Activities'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'

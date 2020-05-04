@@ -85,8 +85,8 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
-import submitFormToFirebase from '~/modules/firebase-submitter'
 import WhatsAppLogo from '@/assets/images/whatsapp_logo.svg'
+import submitFormToFirebase from '~/modules/firebase-submitter'
 
 export default {
   components: {
