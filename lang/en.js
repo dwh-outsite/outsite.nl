@@ -96,6 +96,12 @@ export default {
       every issue seriously, and they're there to help you.
     `
   },
+  eating_out: {
+    title: 'EatingOUT: Our weekly dinner',
+    subtitle: 'Every Tuesday, for just 4 euros',
+    button: 'Sign up for the next EatingOUT now',
+    notes: ['Members only', 'Sign-up required']
+  },
   forms: {
     label: {
       name: 'How should we call you?',
