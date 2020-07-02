@@ -51,10 +51,15 @@
     </section>
 
     <section class="information relative pt-12">
-      <Activities :title="$t('activities.title')" />
+      Bullet points
+    </section>
+
+    <section class="">
+      highlights
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
+      + sign up
       <JoinOptions
         :title="$t('ways_to_join.title')"
         :left-title="$t('ways_to_join.kmg.title')"
@@ -75,8 +80,13 @@
       </JoinOptions>
     </section>
 
-    <section id="video" class="bg-white">
+    <section id="video" class="mb-24">
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
+    </section>
+
+    <section id="activities" class="relative page-ender pt-48 md:pt-20">
+      <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
+      <Activities :title="$t('activities.title')" />
     </section>
 
     <section id="eatingout" class="bg-gray-200">
@@ -97,6 +107,7 @@ import Panda from '@/assets/images/outsite_panda_cropped.svg'
 
 import Header from '~/components/Header'
 import Activities from '~/components/Activities'
+import Testimonial from '~/components/Testimonial'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
 import EatingOut from '~/components/EatingOut'
@@ -106,6 +117,7 @@ export default {
     Header,
     Panda,
     Activities,
+    Testimonial,
     JoinOptions,
     Video,
     EatingOut,
@@ -123,6 +135,15 @@ export default {
 .information::before {
   @apply bg-gray-200 absolute w-full;
   height: 250%;
+  transform: skewY(-7deg);
+  content: '';
+  z-index: -1;
+  top: 0px;
+}
+
+.page-ender::before {
+  @apply bg-gray-200 absolute w-full;
+  height: 150%;
   transform: skewY(-7deg);
   content: '';
   z-index: -1;

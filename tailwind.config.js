@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         pink: {
           ...colors.pink,
+          100: '#ffe4f4',
           200: '#ff9ad8',
           400: '#FC66C2'
         },
@@ -34,6 +35,9 @@ module.exports = {
         '-8': '-2rem',
         '-16': '-4rem',
         '-14': '-3.5rem'
+      },
+      fontSize: {
+        mega: '10rem'
       }
     },
     aspectRatio: {
