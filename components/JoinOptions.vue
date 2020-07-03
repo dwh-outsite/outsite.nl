@@ -3,45 +3,97 @@
     <div class="text-center">
       <h1 v-html="title" class="text-white font-medium text-5xl"></h1>
     </div>
-    <div class="md:flex justify-center">
-      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-4">
-        <div class="flex-1">
-          <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mb-8 text-white">
-            <Zondicon :icon="leftIcon" class="fill-current" />
+    <div class="md:flex justify-center mt-4">
+      <div class="flex-1 mr-2 fade-corners rounded-lg text-white">
+        <div class="bg-pink-400 rounded-t-lg pb-6 pt-8 px-8">
+          <div class="flex items-center mb-6">
+            <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-pink-400">
+              <Zondicon icon="compose" class="fill-current" />
+            </div>
+            <h2 class="text-xl font-bold uppercase tracking-wider">
+              Lid worden bij Outsite
+            </h2>
           </div>
-          <h2 class="text-xl font-bold mb-4 text-pink-400 uppercase tracking-wider">
-            {{ leftTitle }}
-          </h2>
-          <p class="mb-8 text-lg">
-            <slot name="left" />
+
+          <p class="text-lg text-white font-semibold mb-4">
+            Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
+            activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
+            kwartaal tot gezamenlijk uitgaan in andere steden.
           </p>
+
+          <button
+            class="
+              bg-white rounded-full px-6 py-3 text-pink-400 shadow-lg font-semibold flex items-center
+              hover:bg-pink-100
+            "
+          >
+            Schrijf je nu in
+            <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+          </button>
         </div>
-        <div>
-          <a :href="leftUrl">
-            <button class="block button-pink">
-              {{ leftButtonText }}
-            </button>
-          </a>
+        <div class="flex flex-wrap -mx-2 pt-4 px-8">
+          <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 w-1/2">
+            <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
+              <div class="flex items-center mb-1">
+                <div class="rounded-full w-8 h-8 p-2 bg-pink-400 mr-3 text-white">
+                  <Zondicon :icon="advantage.icon" class="fill-current" />
+                </div>
+                <div class="flex-1 leading-none">
+                  <div v-text="advantage.title" class="font-bold text-pink-400 uppercase tracking-wider" />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="pl-8 mr-3" />
+                <p v-text="advantage.description" class="text-sm leading-tight" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bg-white rounded shadow p-8 flex-1 mx-2 flex flex-col justify-between mt-6 md:mt-4">
-        <div class="flex-1">
-          <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mb-8 text-white">
-            <Zondicon :icon="rightIcon" class="fill-current" />
+      <div class="flex-1 ml-2">
+        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between">
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mr-4 text-white">
+                <Zondicon :icon="leftIcon" class="fill-current" />
+              </div>
+              <h2 class="text-xl font-bold text-pink-400 uppercase tracking-wider">
+                {{ leftTitle }}
+              </h2>
+            </div>
+            <p class="mb-6 text-lg">
+              <slot name="left" />
+            </p>
           </div>
-          <h2 class="text-xl font-bold mb-4 text-pink-400 uppercase tracking-wider">
-            {{ rightTitle }}
-          </h2>
-          <p class="mb-8 text-lg">
-            <slot name="right" />
-          </p>
+          <div>
+            <a :href="leftUrl">
+              <button class="block button-pink">
+                {{ leftButtonText }}
+              </button>
+            </a>
+          </div>
         </div>
-        <div>
-          <a :href="rightUrl">
-            <button class="block button-pink">
-              {{ rightButtonText }}
-            </button>
-          </a>
+        <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between mt-6 md:mt-4">
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mr-4 text-white">
+                <Zondicon :icon="rightIcon" class="fill-current" />
+              </div>
+              <h2 class="text-xl font-bold text-pink-400 uppercase tracking-wider">
+                {{ rightTitle }}
+              </h2>
+            </div>
+            <p class="mb-6 text-lg">
+              <slot name="right" />
+            </p>
+          </div>
+          <div>
+            <a :href="rightUrl">
+              <button class="block button-pink">
+                {{ rightButtonText }}
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -63,6 +115,61 @@ export default {
     'rightButtonText',
     'leftUrl',
     'rightUrl'
-  ]
+  ],
+  data() {
+    return {
+      membershipAdvantages: [
+        {
+          icon: 'factory',
+          title: 'Wekelijkse Borrel',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+          `
+        },
+        {
+          icon: 'tablet',
+          title: 'Gezellige WhatsAppgroepen',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+          `
+        },
+        {
+          icon: 'travel-walk',
+          title: 'Leuke activiteiten',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+          `
+        },
+        {
+          icon: 'location-food',
+          title: 'Wekelijkse Eettafel',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+          `
+        },
+        {
+          icon: 'layers',
+          title: 'Geen verplichtingen',
+          description: `
+            Geen verplichtingen, geen ontgroening, en te combineren met studie.
+          `
+        },
+        {
+          icon: 'target',
+          title: 'Persoonlijke ontwikkeling',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+          `
+        }
+      ]
+    }
+  }
 }
 </script>
+
+<style scoped>
+.fade-corners {
+  background: #ffaadf;
+  box-shadow: 0 0 20px #ffaadf;
+}
+</style>

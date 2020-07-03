@@ -50,7 +50,7 @@ module.exports = {
   },
   variants: {
     aspectRatio: ['responsive'],
-    backgroundColor: ['disabled']
+    backgroundColor: ['disabled', 'responsive', 'hover', 'focus']
   },
   plugins: [
     require('tailwind-heropatterns')({
