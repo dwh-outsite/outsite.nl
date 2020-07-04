@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-4">
-    <div class="flex -mx-3">
-      <div v-for="point in bulletPoints" :key="point.title" class="flex-1 rounded-md bg-white mx-3 shadow-md">
+    <div class="md:flex -mx-3">
+      <div v-for="point in bulletPoints" :key="point.title" class="flex-1 rounded-md bg-white mx-3 mb-4 shadow-md">
         <div class="pt-1 px-1">
           <div class="w-full h-40 rounded-t overflow-hidden mx-auto">
             <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />

@@ -54,7 +54,7 @@
       <div class="information bg-black relative -mb-48">
         <div class="information-content -mt-48">
           <div class="pb-48 pt-48">
-            <BulletPoints class="relative x-50 z-20 pt-40 pb-24" />
+            <BulletPoints class="relative x-50 z-20 pt-20 md:pt-40 pb-12 md:pb-24" />
           </div>
 
           <div class="image-container">
