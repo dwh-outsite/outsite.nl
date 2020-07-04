@@ -50,16 +50,21 @@
       </div>
     </section>
 
-    <section class="information relative pt-12">
-      Bullet points
-    </section>
+    <section class="relative">
+      <div class="information bg-black relative -mb-48">
+        <div class="information-content -mt-48">
+          <div class="pb-48 pt-48">
+            <BulletPoints class="relative x-50 z-20 pt-40 pb-24" />
+          </div>
 
-    <section class="">
-      highlights
+          <div class="image-container">
+            <img src="~/assets/images/cover.jpg" class="opacity-50" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
-      + sign up
       <JoinOptions
         :title="$t('ways_to_join.title')"
         :left-title="$t('ways_to_join.kmg.title')"
@@ -78,6 +83,19 @@
           {{ $t('ways_to_join.bar_buddy.description') }}
         </template>
       </JoinOptions>
+    </section>
+
+    <section class="relative t2">
+      <div class="p-8 container mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu orci quis augue dignissim consequat. Vivamus
+        eleifend tristique ligula vitae pellentesque. Proin sodales vestibulum sollicitudin. Cras bibendum lorem quis
+        tristique, a efficitur metus aliquam. Nam sagittis quam sed erat ornare, eget sagittis risus fermentum. Proin id
+        consequat arcu. Ut at mollis mi. Nunc ex lectus, euismod sed ligula laoreet, consectetur tempor arcu. Aliquam
+        dapibus libero, sed porttitor sem ultrices eu. Pellentesque vel sem lacus. Quisque malesuada lacus mattis nisl
+        accumsan, sed gravida odio sodales. In fermentum sapien et sem vehicula dignissim. Mauris laoreet odio purus, eu
+        varius tellus vulputate vel. Nullam rhoncus interdum rhoncus. Nullam ante mi, luctus eu tincidunt vel, dapibus
+        quis purus. Ut eget ante condimentum libero commodo tristique a sed quam.
+      </div>
     </section>
 
     <section id="video" class="mb-24">
@@ -106,20 +124,22 @@ import Zondicon from 'vue-zondicons'
 import Panda from '@/assets/images/outsite_panda_cropped.svg'
 
 import Header from '~/components/Header'
-import Activities from '~/components/Activities'
-import Testimonial from '~/components/Testimonial'
+import BulletPoints from '~/components/BulletPoints'
 import JoinOptions from '~/components/JoinOptions'
 import Video from '~/components/Video'
+import Testimonial from '~/components/Testimonial'
+import Activities from '~/components/Activities'
 import EatingOut from '~/components/EatingOut'
 
 export default {
   components: {
     Header,
     Panda,
-    Activities,
-    Testimonial,
+    BulletPoints,
     JoinOptions,
     Video,
+    Testimonial,
+    Activities,
     EatingOut,
     Zondicon
   },
@@ -132,10 +152,21 @@ export default {
 </script>
 
 <style>
-.information::before {
-  @apply bg-gray-200 absolute w-full;
-  height: 250%;
+.information {
+  @apply w-full overflow-hidden;
   transform: skewY(-7deg);
+  z-index: -1;
+}
+
+.information-content {
+  transform: skewY(7deg);
+}
+
+.t2::before {
+  @apply bg-gray-200 absolute w-full;
+  height: 150%;
+  transform: skewY(-7deg);
+  transform-origin: bottom left;
   content: '';
   z-index: -1;
   top: 0px;
@@ -162,5 +193,21 @@ export default {
 
 .introduction {
   margin-bottom: -10rem;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
