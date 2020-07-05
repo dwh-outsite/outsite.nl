@@ -86,16 +86,7 @@
     </section>
 
     <section class="relative t2">
-      <div class="p-8 container mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu orci quis augue dignissim consequat. Vivamus
-        eleifend tristique ligula vitae pellentesque. Proin sodales vestibulum sollicitudin. Cras bibendum lorem quis
-        tristique, a efficitur metus aliquam. Nam sagittis quam sed erat ornare, eget sagittis risus fermentum. Proin id
-        consequat arcu. Ut at mollis mi. Nunc ex lectus, euismod sed ligula laoreet, consectetur tempor arcu. Aliquam
-        dapibus libero, sed porttitor sem ultrices eu. Pellentesque vel sem lacus. Quisque malesuada lacus mattis nisl
-        accumsan, sed gravida odio sodales. In fermentum sapien et sem vehicula dignissim. Mauris laoreet odio purus, eu
-        varius tellus vulputate vel. Nullam rhoncus interdum rhoncus. Nullam ante mi, luctus eu tincidunt vel, dapibus
-        quis purus. Ut eget ante condimentum libero commodo tristique a sed quam.
-      </div>
+      <Highlights />
     </section>
 
     <section id="video" class="mb-24">
@@ -126,6 +117,7 @@ import Panda from '@/assets/images/outsite_panda_cropped.svg'
 import Header from '~/components/Header'
 import BulletPoints from '~/components/BulletPoints'
 import JoinOptions from '~/components/JoinOptions'
+import Highlights from '~/components/Highlights'
 import Video from '~/components/Video'
 import Testimonial from '~/components/Testimonial'
 import Activities from '~/components/Activities'
@@ -137,6 +129,7 @@ export default {
     Panda,
     BulletPoints,
     JoinOptions,
+    Highlights,
     Video,
     Testimonial,
     Activities,
@@ -164,7 +157,7 @@ export default {
 
 .t2::before {
   @apply bg-gray-200 absolute w-full;
-  height: 150%;
+  height: 100%;
   transform: skewY(-7deg);
   transform-origin: bottom left;
   content: '';
