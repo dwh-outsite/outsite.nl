@@ -4,10 +4,10 @@
       <h1 v-html="title" class="text-white font-medium text-5xl"></h1>
     </div>
     <div class="md:flex justify-center mt-4">
-      <div class="flex-1 mr-2 fade-corners rounded-lg text-white">
+      <div class="flex-1 mb-8 md:mb-0 md:mr-2 fade-corners rounded-lg text-white">
         <div class="bg-pink-400 rounded-t-lg pb-6 pt-8 px-8">
-          <div class="flex items-center mb-6">
-            <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-pink-400">
+          <div class="md:flex items-center mb-6">
+            <div class="rounded-full w-16 h-16 p-5 bg-white mr-4 text-pink-400 mb-6 md:mb-0">
               <Zondicon icon="compose" class="fill-current" />
             </div>
             <h2 class="text-xl font-bold uppercase tracking-wider">
@@ -32,7 +32,7 @@
           </button>
         </div>
         <div class="flex flex-wrap -mx-2 pt-4 px-8">
-          <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 w-1/2">
+          <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 md:w-1/2">
             <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
               <div class="flex items-center mb-1">
                 <div class="rounded-full w-8 h-8 p-2 bg-pink-400 mr-3 text-white">
@@ -50,11 +50,11 @@
           </div>
         </div>
       </div>
-      <div class="flex-1 ml-2">
+      <div class="flex-1 md:ml-2">
         <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between">
           <div class="flex-1">
-            <div class="flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mr-4 text-white">
+            <div class="md:flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-4 bg-pink-400 mr-4 text-white mb-6 md:mb-0">
                 <Zondicon :icon="leftIcon" class="fill-current" />
               </div>
               <h2 class="text-xl font-bold text-pink-400 uppercase tracking-wider">
@@ -75,8 +75,8 @@
         </div>
         <div class="bg-white rounded-lg shadow p-8 flex-1 flex flex-col justify-between mt-6 md:mt-4">
           <div class="flex-1">
-            <div class="flex items-center mb-6">
-              <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mr-4 text-white">
+            <div class="md:flex items-center mb-6">
+              <div class="rounded-full w-16 h-16 p-5 bg-pink-400 mr-4 text-white mb-6 md:mb-0">
                 <Zondicon :icon="rightIcon" class="fill-current" />
               </div>
               <h2 class="text-xl font-bold text-pink-400 uppercase tracking-wider">
