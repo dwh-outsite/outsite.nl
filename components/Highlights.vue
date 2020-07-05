@@ -36,7 +36,7 @@
         <div class="flex-1 p-8 flex flex-col justify-between">
           <div>
             <h2 class="text-pink-400 uppercase tracking-wide font-bold text-2xl mb-4">Iets leuks</h2>
-            <p class="text-xl text-gray-800">
+            <p class="text-xl text-gray-800 mb-4">
               Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
               het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
               volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
@@ -57,7 +57,7 @@
         <div class="flex-1 p-8 flex flex-col justify-between">
           <div>
             <h2 class="text-pink-400 uppercase tracking-wide font-bold text-2xl mb-4">Iets leuks</h2>
-            <p class="text-xl text-gray-800">
+            <p class="text-xl text-gray-800 mb-4">
               Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
               het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
               volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
