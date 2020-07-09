@@ -12,7 +12,8 @@ module.exports = {
         80: '20rem'
       },
       width: {
-        7: '1.75rem'
+        7: '1.75rem',
+        80: '20rem'
       },
       maxWidth: {
         56: '14rem'

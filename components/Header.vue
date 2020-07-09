@@ -45,7 +45,7 @@
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
       </video>
     </div>
-    <div class="hero"></div>
+    <div :class="bg ? bg : 'bg-white'" class="hero"></div>
     <div class="relative flex items-center h-full">
       <div class="container px-4 mx-auto my-40">
         <slot></slot>
@@ -67,7 +67,7 @@ export default {
     NLFlag,
     GBFlag
   },
-  props: ['small'],
+  props: ['small', 'bg'],
   mounted() {
     window.addEventListener('load', () => {
       document.getElementById('headervid').play()
@@ -98,7 +98,7 @@ export default {
 }
 
 .hero {
-  @apply bg-white absolute w-full;
+  @apply absolute w-full;
   transform: skewY(-7deg);
   transform-origin: 0;
   height: 100rem;

@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
+import testimonials from '~/lang/nl_testimonials.js'
 
 export default {
   hero: {
@@ -152,5 +153,9 @@ export default {
       external_affairs: 'Extern'
     }
   },
-  barbuddies
+  barbuddies,
+  testimonials: {
+    title: 'Testimonials',
+    members: testimonials
+  }
 }
