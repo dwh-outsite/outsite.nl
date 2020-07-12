@@ -1,6 +1,15 @@
 import barbuddies from '~/lang/en_barbuddies.js'
 
 export default {
+  menu: [
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
+    { title: 'Reservations', url: () => '/book' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Committees', url: localePath => localePath('committees') },
+    { title: 'Testimonials', url: localePath => localePath('testimonials') },
+    { title: 'Contact', url: () => '#contact' }
+  ],
   hero: {
     title: `Delft's LGBT+ Youth Association`,
     subtitle: `for everyone up to 28 years`,

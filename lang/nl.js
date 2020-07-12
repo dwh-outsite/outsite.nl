@@ -4,6 +4,15 @@ import testimonials from '~/lang/nl_testimonials.js'
 import highlights from '~/lang/highlights.js'
 
 export default {
+  menu: [
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
+    { title: 'Reserveren', url: () => '/reserveer' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Commissies', url: localePath => localePath('committees') },
+    { title: 'Ervaringen', url: localePath => localePath('testimonials') },
+    { title: 'Contact', url: () => '#contact' }
+  ],
   hero: {
     title: 'Delftse LHBT+ jongerenvereniging',
     subtitle: `voor iedereen t/m 28 jaar`,

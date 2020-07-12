@@ -35,7 +35,8 @@ module.exports = {
       inset: {
         '-8': '-2rem',
         '-16': '-4rem',
-        '-14': '-3.5rem'
+        '-14': '-3.5rem',
+        16: '4rem'
       },
       fontSize: {
         mega: '10rem'
