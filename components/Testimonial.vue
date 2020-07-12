@@ -144,11 +144,9 @@ export default {
 @keyframes slideInRight {
   0% {
     transform: translateX(400px);
-    opacity: 0%;
   }
   100% {
     transform: translateX(0);
-    opacity: 100%;
   }
 }
 
@@ -156,11 +154,9 @@ export default {
   @keyframes slideInRight {
     0% {
       transform: translateX(1000px);
-      opacity: 0%;
     }
     100% {
       transform: translateX(0);
-      opacity: 100%;
     }
   }
 }
@@ -168,11 +164,9 @@ export default {
 @keyframes slideOutLeft {
   0% {
     transform: translateX(0);
-    opacity: 100%;
   }
   100% {
     transform: translateX(-400px);
-    opacity: 0%;
   }
 }
 
@@ -180,11 +174,9 @@ export default {
   @keyframes slideOutLeft {
     0% {
       transform: translateX(0);
-      opacity: 100%;
     }
     100% {
       transform: translateX(-1000px);
-      opacity: 0%;
     }
   }
 }
