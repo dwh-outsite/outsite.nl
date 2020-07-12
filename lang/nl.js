@@ -161,6 +161,12 @@ export default {
   },
   committees: {
     title: 'Commissies',
+    introduction: `
+      Bij Outsite hebben we heel veel commissies en die zijn natuurlijk allemaal harstikke leuk.
+      Daarom kun jij ook een commissie joinen. Hieronder vind je ze allemaal. Echt waar. Nou, het
+      wordt nu toch echt wel tijd om er op een te klikken. Oh je bent dit nog steeds aan het lezen,
+      nou laat dan maar zitten, dan is er geen hoop meer. Nee hoor, grapje, komt helemaal goed!
+    `,
     list: committees
   }
 }
