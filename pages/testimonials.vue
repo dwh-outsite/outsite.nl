@@ -29,25 +29,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="container mx-auto px-4 text-xl leading-normal text-gray-800">
-      <div
-        v-for="testimonial in $t('testimonials.members')"
-        :key="testimonial.name"
-        class="bg-pink-200 flex rounded-full shadow-xl overflow-hidden mb-20"
-      >
-        <div class="w-1/3 flex items-center justify-center">
-          <div class="bg-white rounded-full ml-10 w-80 h-80 border-8 border-white overflow-hidden">
-            <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
-          </div>
-        </div>
-        <div class="flex-1 bg-pink-100 p-12 pr-32">
-          <h2 v-text="testimonial.name" class="text-pink-500 font-bold text-3xl mb-4 uppercase" />
-          <p v-html="testimonial.text" />
-        </div>
-      </div>
-    </section>
-    <section class="relative page-ender -mb-64 pb-64">hoi</section> -->
   </div>
 </template>
 
