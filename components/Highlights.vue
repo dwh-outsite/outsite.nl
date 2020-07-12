@@ -1,8 +1,8 @@
 <template>
-  <div class="pt-16 mx-auto pb-8 md:pb-0">
+  <div class="pt-16 mx-auto pb-0">
     <div v-show="excerpts" class="container mx-auto px-4 flex mb-8 items-center">
       <h1 v-html="$t('highlights.title_homepage')" class="text-pink-500 font-medium text-5xl leading-none flex-1" />
-      <a :href="localePath('highlights')">
+      <a :href="localePath('highlights')" class="hidden md:block">
         <button
           class="
             bg-pink-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center
@@ -37,6 +37,18 @@
           </div>
         </div>
       </div>
+
+      <a v-show="excerpts" :href="localePath('highlights')" class="md:hidden">
+        <button
+          class="
+            bg-pink-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center
+            hover:bg-pink-400 text-lg mt-2 mx-auto
+          "
+        >
+          {{ $t('highlights.more') }}
+          <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+        </button>
+      </a>
     </div>
   </div>
 </template>
