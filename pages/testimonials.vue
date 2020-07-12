@@ -10,12 +10,8 @@
 
     <section class="bg-pink-100">
       <div class="container mx-auto px-4 pb-10 flex flex-wrap justify-center">
-        <div
-          v-for="(testimonial, index) in $t('testimonials.members')"
-          :key="index"
-          class="w-1/3 asdfjaslkdfjaslkdfjsldkf"
-        >
-          <div class="mx-4 bg-white relative rounded-lg bg-hero-falling-triangles py-6 mb-10 shadow-xl">
+        <div v-for="(testimonial, index) in $t('testimonials.members')" :key="index" class="w-1/2 mb-8">
+          <div class="mx-4 h-full bg-white relative rounded-lg bg-hero-falling-triangles py-6 shadow-xl">
             <div class="w-48 h-48 rounded-full overflow-hidden mx-auto">
               <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
             </div>
@@ -24,8 +20,8 @@
                 <div v-text="testimonial.author.name" class="uppercase tracking-wide font-bold text-pink-400 mr-1" />
                 <div v-text="testimonial.author.description" class="text-gray-500 italic" />
               </div>
-              <div class="flex px-6 pb-6 leading-snug">
-                <div class="absolute text-mega text-pink-100 -ml-6 -mt-20 pt-2 z-0">“</div>
+              <div class="flex px-12 pb-6 leading-snug">
+                <div class="absolute text-mega text-pink-100 -ml-8 -mt-20 pt-2 z-0">“</div>
                 <div v-text="testimonial.text" class="text-xl z-20 pt-2" />
               </div>
             </div>
