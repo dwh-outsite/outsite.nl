@@ -86,7 +86,7 @@
     </section>
 
     <section class="relative t2">
-      <Highlights />
+      <Highlights :excerpts="true" />
     </section>
 
     <section id="video" class="mb-24">

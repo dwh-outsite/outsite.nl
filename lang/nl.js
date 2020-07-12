@@ -1,6 +1,7 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
 import committees from '~/lang/committees.js'
 import testimonials from '~/lang/nl_testimonials.js'
+import highlights from '~/lang/highlights.js'
 
 export default {
   hero: {
@@ -168,5 +169,10 @@ export default {
       nou laat dan maar zitten, dan is er geen hoop meer. Nee hoor, grapje, komt helemaal goed!
     `,
     list: committees
+  },
+  highlights: {
+    title: 'Onze Hoogtepunten',
+    title_homepage: 'Onze <strong>Hoogtepunten</strong>',
+    list: highlights
   }
 }
