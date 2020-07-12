@@ -51,24 +51,6 @@
         </div>
       </div>
     </nav>
-    <!-- <nav class="absolute z-50 w-full mt-8">
-      <div class="container px-4 mx-auto flex justify-between items-center">
-        <div class="hidden md:block">
-          <a :href="localePath('index')" class="text-white text-xl font-semibold no-underline mr-4">
-            Home
-          </a>
-          <a :href="localePath('index') + '#join-outsite'" class="text-white text-xl font-semibold no-underline mr-4">
-            Join Outsite
-          </a>
-          <a :href="localePath('index') + '#eatingout'" class="text-white text-xl font-semibold no-underline mr-4">
-            EatingOUT
-          </a>
-          <a href="#contact" class="text-white text-xl font-semibold no-underline mr-4">
-            Contact
-          </a>
-        </div>
-       
-    </nav> -->
     <div class="video-container">
       <video id="headervid" preload="metadata" muted loop class="opacity-50">
         <source src="/outsite_web_bg.mp4" type="video/mp4" />
