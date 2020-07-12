@@ -21,15 +21,17 @@
             kwartaal tot gezamenlijk uitgaan in andere steden.
           </p>
 
-          <button
-            class="
-              bg-white rounded-full px-6 py-3 text-pink-400 shadow-lg font-semibold flex items-center
-              hover:bg-pink-100
-            "
-          >
-            Schrijf je nu in
-            <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
-          </button>
+          <a :href="localePath('signup')">
+            <button
+              class="
+                bg-white rounded-full px-6 py-3 text-pink-400 shadow-lg font-semibold flex items-center
+                hover:bg-pink-100
+              "
+            >
+              Schrijf je nu in
+              <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+            </button>
+          </a>
         </div>
         <div class="flex flex-wrap -mx-2 pt-6 px-8">
           <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 md:w-1/2">
