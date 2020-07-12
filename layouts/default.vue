@@ -2,7 +2,7 @@
   <div>
     <nuxt />
 
-    <footer id="contact" class="bg-gray-700">
+    <footer id="contact" class="bg-gray-700 relative">
       <JoinWhatsApp
         :button-text="$t('footer.whatsapp.button')"
         button-target="https://chat.whatsapp.com/5yMBCohMukj1oCVR4lPHer"
