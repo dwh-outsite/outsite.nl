@@ -55,7 +55,10 @@
             <div class="flex-1 bg-white-gradient mr-12">
               <div class="flex-1 flex flex-col justify-between relative p-3 my-6">
                 <div class="absolute text-mega text-pink-100 -ml-6 -mt-20 pt-2 z-0">“</div>
-                <div v-text="testimonial.quote" class="text-xl z-10 pt-2" />
+                <div class="text-xl z-10 pt-2">
+                  {{ testimonial.quote }}
+                  <a :href="localePath('testimonials')" class="text-pink-500">Lees meer &raquo;</a>
+                </div>
                 <div>
                   <span v-text="testimonial.author.name" class="uppercase tracking-wide font-bold text-pink-400 mr-1" />
                   <span v-text="testimonial.author.description" class="text-gray-500 italic" />
@@ -89,26 +92,7 @@ export default {
     return {
       active: 0,
       interval: undefined,
-      testimonials: [
-        {
-          picture: 'bg-blue-400',
-          quote: `Want to hear from us when we add new components? Sign up for our newsletter and we'll email you every
-                  time we release a new batch of components.`,
-          author: {
-            name: 'Henk',
-            description: 'Outsite member for 2 years'
-          }
-        },
-        {
-          picture: 'bg-green-400',
-          quote: `Want to hear from us when we add new components? Sign up for our newsletter and we'll email you every
-                  time we release a new batch of components.`,
-          author: {
-            name: 'Henk',
-            description: 'Outsite member for 2 years'
-          }
-        }
-      ]
+      testimonials: this.$t('testimonials.members').sort(() => Math.random() - Math.random())
     }
   },
   mounted() {

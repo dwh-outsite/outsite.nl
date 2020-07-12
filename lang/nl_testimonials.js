@@ -12,6 +12,10 @@ export default [
     heb ik een paar ontzettend gave activiteiten voor de OWee en Coming Out-dag neer mogen zetten. Of het nu gaat om
     RuPaul’s Drag Race kijken, Heksn’kaasTM eten of losgaan op een fantastische OUTnight, Outsite is een plek waar ik
     mij helemaal thuis voel.
+    `,
+    quote: `
+      Lid worden bij Outsite is één van de beste keuzes ooit geweest! Via de KMG heb ik mensen leren kennen die ik nu
+      als familie beschouw.
     `
   },
   {
@@ -25,9 +29,13 @@ export default [
     LHBT+-studentenverenigingen. Dus toen ik voor mijn master naar Delft verhuisde heb ik geen moment getwijfeld om naar
     Outsite te komen. Bij de KennisMakingsGroep heb ik meteen nieuwe mensen leren kennen, en ik mocht ook nog eens
     meespelen in de Outsite band. Verder eet en kook ik regelmatig voor de wekelijkse eettafel op dinsdag, en ben ik
-    barvrijwilliger. Het leukste aan Outsite vind ik dat je allemaal verschillende mensen bij elkaar hebt, en ar toch
+    barvrijwilliger. Het leukste aan Outsite vind ik dat je allemaal verschillende mensen bij elkaar hebt, en er toch
     altijd een klik is, en dat het een plek is waar je nieuwe dingen kunt ontdekken en doen (ik heb tot een half jaar
     geleden nog nooit een biertap aangeraakt, dus dat was zeker nieuw voor me).
+    `,
+    quote: `
+    Het leukste aan Outsite vind ik dat je allemaal verschillende mensen bij elkaar hebt en er toch
+    altijd een klik is.
     `
   },
   {
@@ -44,6 +52,10 @@ export default [
     ook grote feesten organiseert. Ik denk dat ik in de afgelopen jaren alle commissies wel heb gedaan die er zijn omdat
     ik het zo leuk vond om mee te helpen en leuke activiteiten te bedenken. Mijn favoriete commissie tot nu toe is denk
     ik KMG begeleider.
+    `,
+    quote: `
+    De eerste keer vond ik het supereng omdat ik nog niemand kende, maar ik leerde door de KMG 
+    zowel nieuwe als oude leden kennen en voelde me al snel thuis.
     `
   },
   {
@@ -60,6 +72,10 @@ export default [
     en twee papa’s, ben ik barbuddy en organiseer ik speciale activiteiten voor de meiden van Outsite. Outsite heeft
     ervoor gezorgd dat ik het tegenovergestelde ben geworden van hoe ik me voelde, nu ben ik een echte Outsider (maar
     dan wel mét Hoofdletter)!
+    `,
+    quote: `
+    De eerste avond was zo anders dan ik mij had voorgesteld! Ik voelde me op mijn
+    plek en iedereen was zo aardig en begripvol.
     `
   },
   {
@@ -70,11 +86,15 @@ export default [
     text: `
     Heyyy het is Matthew, Outsite's official fashion queen. Ik ben halverwege de twintig en kom helemaal uit Palestina
     om mijn Masters in Microelectronics te doen. Als ik geen huiswerk doe of aandacht zoek, besteed ik mijn tijd aan
-    sporten, lezen, tv-programma's kijken en allerlei soorten video- en bordspellen spelen. Ben je net lid geworden
-    van de TU en wil je de homo's ontmoeten? Kom naar Outsite, waar we elke donderdag samenkomen om tot rust te komen,
+    sporten, lezen, tv-programma's kijken en allerlei soorten video- en bordspellen spelen. Ben je net TU student 
+    geworden en wil je de homo's ontmoeten? Kom naar Outsite, waar we elke donderdag samenkomen om tot rust te komen,
     een slokje hete thee te nemen en genezingen voor homofobie te vinden. Als je je onzeker voelt als je alleen naar
     een nieuwe plek komt, vraag dan Matthew aan de bar. Ik zal je gezelschap houden, je de in- en outs van Outsite
     laten zien en je voorstellen aan de gays.
+    `,
+    quote: `
+    Ik kom helemaal uit Palestina om mijn master in Microelectronics te doen.
+    Ben je net TU student geworden? Kom naar Outsite!
     `
   },
   {
@@ -90,7 +110,11 @@ export default [
     heleboel verschillende activiteiten hier het hele jaar door en zelf ben ik een fan van het organiseren van dingen.
     Om deze reden mocht ik dan ook bij verschillende dingen helpen en mijn creativiteit laten zien. Een van de verdere
     wekelijkse activiteiten is 'EatingOUT'. Hierbij ga je koken voor een groep leden en ga je gezellig samen eten en
-    relaxen. `
+    relaxen.`,
+    quote: `
+    Een groot en belangrijk ding dat ik heb met deze vereniging is dat ik mezelf kan zijn en ik mij ook geaccepteerd
+    voel maar dat ook zeker ben.
+    `
   },
   {
     author: {
@@ -105,6 +129,10 @@ export default [
     erg van de uitjes naar prides, feesten en zusjesverenigingen omdat je daar vaak de meest rare avonturen beleeft.
     Ook hebben we activiteiten met de Gender Blenders, en knusse spelletjes avonden maar het is eigenlijk teveel om op
     te noemen. Conclusie is toch wel dat ik echt van deze mensen en de vereniging ben gaan houden <3.
+    `,
+    quote: `
+    Naast de reguliere borrels hou ik heel erg van de uitjes naar prides, feesten en zusjesverenigingen omdat je
+    daar vaak de meest rare avonturen beleeft.
     `
   }
 ]
