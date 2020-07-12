@@ -15,7 +15,7 @@
             </h2>
           </div>
 
-          <p class="text-lg text-white font-semibold mb-4">
+          <p class="text-lg md:text-xl text-white font-semibold mb-6">
             Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
             activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
             kwartaal tot gezamenlijk uitgaan in andere steden.
@@ -31,7 +31,7 @@
             <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
           </button>
         </div>
-        <div class="flex flex-wrap -mx-2 pt-4 px-8">
+        <div class="flex flex-wrap -mx-2 pt-6 px-8">
           <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 md:w-1/2">
             <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
               <div class="flex items-center mb-1">
@@ -44,7 +44,7 @@
               </div>
               <div class="flex">
                 <div class="pl-8 mr-3" />
-                <p v-text="advantage.description" class="text-sm leading-tight" />
+                <p v-text="advantage.description" class="text-sm md:text-base leading-tight" />
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
                 {{ leftTitle }}
               </h2>
             </div>
-            <p class="mb-6 text-lg">
+            <p class="mb-6 text-lg md:text-xl">
               <slot name="left" />
             </p>
           </div>
@@ -83,7 +83,7 @@
                 {{ rightTitle }}
               </h2>
             </div>
-            <p class="mb-6 text-lg">
+            <p class="mb-6 text-lg md:text-xl">
               <slot name="right" />
             </p>
           </div>
