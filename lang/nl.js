@@ -182,6 +182,8 @@ export default {
   highlights: {
     title: 'Onze Hoogtepunten',
     title_homepage: 'Onze <strong>Hoogtepunten</strong>',
+    more: 'Meer hoogtepunten',
+    read_more: 'Lees meer over deze activiteit',
     list: highlights
   }
 }

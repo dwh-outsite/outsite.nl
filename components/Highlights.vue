@@ -1,7 +1,18 @@
 <template>
   <div class="pt-16 mx-auto pb-8 md:pb-0">
-    <div v-show="excerpts" class="container mx-auto px-4">
-      <h1 v-html="$t('highlights.title_homepage')" class="text-pink-500 font-medium text-5xl mb-8 leading-none" />
+    <div v-show="excerpts" class="container mx-auto px-4 flex mb-8 items-center">
+      <h1 v-html="$t('highlights.title_homepage')" class="text-pink-500 font-medium text-5xl leading-none flex-1" />
+      <a :href="localePath('highlights')">
+        <button
+          class="
+            bg-pink-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center
+            hover:bg-pink-400 text-lg mt-2
+          "
+        >
+          {{ $t('highlights.more') }}
+          <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
+        </button>
+      </a>
     </div>
 
     <div class="container mx-auto px-4">
@@ -21,7 +32,7 @@
           </div>
           <div v-show="excerpts">
             <a :href="localePath('highlights')" class="text-pink-200 text-lg hover:text-pink-500">
-              Lees meer over deze activiteit &raquo;
+              {{ $t('highlights.read_more') }} &raquo;
             </a>
           </div>
         </div>
@@ -31,7 +42,10 @@
 </template>
 
 <script>
+import Zondicon from 'vue-zondicons'
+
 export default {
+  components: { Zondicon },
   props: ['excerpts'],
   data() {
     return {
