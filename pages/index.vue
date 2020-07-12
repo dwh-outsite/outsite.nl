@@ -51,14 +51,14 @@
     </section>
 
     <section class="relative">
-      <div class="information bg-black relative -mb-48">
+      <div class="information bg-gray-400 relative -mb-48">
         <div class="information-content -mt-48">
           <div class="pb-48 pt-48">
-            <BulletPoints class="relative x-50 z-20 pt-20 md:pt-40 pb-12 md:pb-24" />
+            <BulletPoints class="relative x-50 z-20 pt-20 md:pt-40 pb-12 md:pb-16" />
           </div>
 
           <div class="image-container">
-            <img src="~/assets/images/cover.jpg" class="opacity-50" />
+            <img src="~/assets/images/cover.jpg" class="opacity-25" />
           </div>
         </div>
       </div>
