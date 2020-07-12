@@ -8,14 +8,14 @@
         <h2 class="text-2xl text-white mt-2 font-light">
           {{ $t('hero.subtitle') }}
         </h2>
-        <div class="mt-8 flex">
+        <div class="mt-8 md:flex md:space-x-4">
           <a href="#join-outsite">
-            <button class="block button-pink">
+            <button class="block button-pink mb-2 md:mb-0">
               {{ $t('hero.leftButton') }}
             </button>
           </a>
           <a href="#video">
-            <button class="block ml-4 button-white">
+            <button class="block button-white">
               {{ $t('hero.rightButton') }}
             </button>
           </a>
