@@ -77,5 +77,6 @@ module.exports = {
     }),
     require('tailwindcss-responsive-embed')(),
     require('tailwindcss-aspect-ratio')()
-  ]
+  ],
+  purge: false
 }
