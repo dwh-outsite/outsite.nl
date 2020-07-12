@@ -1,4 +1,5 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
+import committees from '~/lang/committees.js'
 import testimonials from '~/lang/nl_testimonials.js'
 
 export default {
@@ -157,5 +158,9 @@ export default {
   testimonials: {
     title: 'Testimonials',
     members: testimonials
+  },
+  committees: {
+    title: 'Commissies',
+    list: committees
   }
 }
