@@ -50,7 +50,7 @@
         <transition name="slide-right">
           <div v-show="index === active" class="absolute flex">
             <div class="w-32 h-32 rounded-full mr-5 overflow-hidden m-6">
-              <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
+              <img :src="requireImage(testimonial.author.name)" class="object-cover h-full" />
             </div>
             <div class="flex-1 bg-white-gradient mr-12">
               <div class="flex-1 flex flex-col justify-between relative p-3 my-6">
@@ -92,7 +92,7 @@ export default {
     return {
       active: 0,
       interval: undefined,
-      testimonials: this.$t('testimonials.members').sort(() => Math.random() - Math.random())
+      testimonials: this.$t('testimonials.members')
     }
   },
   mounted() {
@@ -111,6 +111,13 @@ export default {
     },
     stopSliding() {
       clearInterval(this.interval)
+    },
+    requireImage(name) {
+      try {
+        return require(`@/assets/images/photos/testimonials/${name.toLowerCase()}.png`)
+      } catch (e) {
+        return require(`@/assets/images/photos/testimonials/default.png`)
+      }
     }
   }
 }

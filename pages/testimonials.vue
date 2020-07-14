@@ -13,7 +13,7 @@
         <div v-for="(testimonial, index) in $t('testimonials.members')" :key="index" class="md:w-1/2 mb-8">
           <div class="md:mx-4 h-full bg-white relative rounded-lg bg-hero-falling-triangles py-6 shadow-xl">
             <div class="w-48 h-48 rounded-full overflow-hidden mx-auto">
-              <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
+              <img :src="requireImage(testimonial.author.name)" class="object-cover h-full" />
             </div>
             <div class="bg-white-gradient-vertical">
               <div class="text-center py-6 text-xl">
@@ -38,6 +38,15 @@ import Header from '~/components/Header'
 export default {
   components: {
     Header
+  },
+  methods: {
+    requireImage(name) {
+      try {
+        return require(`@/assets/images/photos/testimonials/${name.toLowerCase()}.png`)
+      } catch (e) {
+        return require(`@/assets/images/photos/testimonials/default.png`)
+      }
+    }
   }
 }
 </script>
