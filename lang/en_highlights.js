@@ -2,41 +2,34 @@ export default [
   {
     title: 'Kerstdiner',
     description: `
-      Last Christmas we enjoyed a delicious and gezellig dinner with our Outsite family, made possible by a group of
-      members. There were various courses and wines, with many members present and spread over two large tables. The
-      atmosphere was very cosy and people seemed to have enjoyed the food and each other's company. It's one of the
-      events that feel most homey and loving!
+      Last Christmas we had a lovely Christmas dinner together with the Outsite family, with four courses prepared by
+      hard working members. This is a yearly activity which really binds us together.
     `,
     excerpt: `
-      Last Christmas we enjoyed a delicious and gezellig dinner with our Outsite family, made possible by a group of
-      members. The atmosphere was very cosy and people seemed to have enjoyed the food. It's one of the events that
-      feel most homey and loving!
+      Last Christmas we had a lovely Christmas dinner together with the Outsite family, with four courses prepared by
+      hard working members. This is a yearly activity which really binds us together.
     `
   },
   {
     title: 'OWee Pink Feest',
     description: `
-      Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
-      het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
-      volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
+      Last Owee had a “pink party”, where the whole bar was covered in pink, everyone wore pink, and of course the
+      drinks were pink as well. It’s all possible during the OWee.
     `,
     excerpt: `
-      Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
-      het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
-      volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
+      Last Owee had a “pink party”, where the whole bar was covered in pink, everyone wore pink, and of course the
+      drinks were pink as well. It’s all possible during the OWee.
     `
   },
   {
     title: 'Outsite Gala',
     description: `
-      Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
-      het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
-      volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
+      To celebrate our lustrum, we organised one big gala on a boat on the Maas in Rotterdam. A night the attendees wil
+      surely never forget, and the first of many Gala’s.
     `,
     excerpt: `
-      Een paar zinnen over deze leuke activiteit die regelmatig terugkomt. Of misschien wel niet. Tja, wie zal
-      het zeggen en hoe komen we erachter. Dat is het spannende. Maar het leuk is sowieso dat jij er een
-      volgende keer bij kan zijn. Dus wordt ff lid enzo, thx. De groeten!
+      To celebrate our lustrum, we organised one big gala on a boat on the Maas in Rotterdam. A night the attendees wil
+      surely never forget, and the first of many Gala’s.
     `
   },
   {

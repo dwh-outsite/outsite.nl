@@ -16,9 +16,10 @@
           </div>
 
           <p class="text-lg md:text-xl text-white font-semibold mb-6">
-            Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
-            activiteiten georganiseerd door vrijwilligers: van een borrel elke donderdagavond en grote LHBT+ feesten elk
-            kwartaal tot gezamenlijk uitgaan in andere steden.
+            Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBTQ+. Er worden allerlei
+            activiteiten georganiseerd door vrijwilligers, van wekelijkse borrels op de donderdagavond, tot grote
+            dansfeesten elk kwartaal en uitgaan in andere steden. Schrijf je in zodat je altijd op de hoogte bent
+            van alle activiteiten!
           </p>
 
           <a :href="localePath('signup')">
@@ -125,28 +126,28 @@ export default {
           icon: 'factory',
           title: 'Wekelijkse Borrel',
           description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+            Iedere donderdag komen we samen voor een gezellige borrel of leuke activiteit.
           `
         },
         {
           icon: 'tablet',
           title: 'Gezellige WhatsAppgroepen',
           description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+            We hebben een leuke WhatsApp groep waar je gezellig kan chatten met iedereen.
           `
         },
         {
           icon: 'travel-walk',
           title: 'Leuke activiteiten',
           description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+            Onze vrijwilligers organiseren vele leuke activiteiten door het jaar heen.
           `
         },
         {
           icon: 'location-food',
           title: 'Wekelijkse Eettafel',
           description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+            Iedere dinsdag eten wij gezamenlijk een maaltijd bereid door een lid.
           `
         },
         {
@@ -160,7 +161,7 @@ export default {
           icon: 'target',
           title: 'Persoonlijke ontwikkeling',
           description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of een leuke activiteit.
+            Leer jezelf en andere beter kennen.
           `
         }
       ]

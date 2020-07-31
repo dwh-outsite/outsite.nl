@@ -1,17 +1,17 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
 import committees from '~/lang/committees.js'
 import testimonials from '~/lang/nl_testimonials.js'
-import highlights from '~/lang/highlights.js'
+import highlights from '~/lang/en_highlights.js'
 
 export default {
   menu: [
-    { title: 'Home', url: localePath => localePath('index') },
-    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
-    { title: 'Reserveren', url: () => '/reserveer' },
-    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
-    { title: 'Commissies', url: localePath => localePath('committees') },
-    { title: 'Ervaringen', url: localePath => localePath('testimonials') },
-    { title: 'Contact', url: () => '#contact' }
+    {title: 'Home', url: localePath => localePath('index')},
+    {title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite'},
+    {title: 'Reserveren', url: () => '/reserveer'},
+    {title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout'},
+    {title: 'Commissies', url: localePath => localePath('committees')},
+    {title: 'Ervaringen', url: localePath => localePath('testimonials')},
+    {title: 'Contact', url: () => '#contact'}
   ],
   hero: {
     title: 'Delftse LHBT+ jongerenvereniging',
@@ -185,10 +185,10 @@ export default {
   committees: {
     title: 'Commissies',
     introduction: `
-      Bij Outsite hebben we heel veel commissies en die zijn natuurlijk allemaal harstikke leuk.
-      Daarom kun jij ook een commissie joinen. Hieronder vind je ze allemaal. Echt waar. Nou, het
-      wordt nu toch echt wel tijd om er op een te klikken. Oh je bent dit nog steeds aan het lezen,
-      nou laat dan maar zitten, dan is er geen hoop meer. Nee hoor, grapje, komt helemaal goed!
+      Bij Outsite hebben we veel commissies en die zijn natuurlijk allemaal hartstikke leuk en
+      gezellig. Uiteraard kan jij je ook aansluiten bij een commissie. Hieronder vind je een
+      mooi overzicht van alle commissies. Kijk maar een beetje rond en zie wat bij je past, wie
+      weet organiseer jij wat leuks komend jaar!
     `,
     list: committees
   },
@@ -202,12 +202,11 @@ export default {
   signup: {
     title: 'Inschrijven als DWH lid',
     main_text: `
-      Outsite is onderdeel van de LHBT+-vereniging DWH. Door lid te worden steun je ons in díe dingen
-      die we zo belangrijk vinden, zoals de kennismakingsgroep, voorlichting op middelbare scholen,
-      filmavond, baravonden en alle andere activiteiten bij DWH.<br />
+      Outsite is onderdeel van de LHBTQ+ vereniging DWH. Door lid te worden steun je ons in dingen die we belangrijk
+      vinden, zoals de kennismakingsgroep, voorlichting op middelbare scholen, filmavonden, baravonden en alle andere activiteiten bij DWH.<br />
       <br />
-      Als lid ontvang je het blad van DWH: het Andersblad en mag je bij de EatingOUT aanschuiven waar je lekker,
-      gezellig en goedkoop kunt eten.
+      Als lid ontvang je het blad van DWH: Het Andersblad en mag bij de EatingOUT aanschuiven waar je lekker, gezellig
+      en goedkoop kan eten.
     `,
     fee_description: `
       De contributie van DWH bedraagt minimaal € 48,50 / € 25,00 per jaar. Een hogere bijdrage is natuurlijk van harte

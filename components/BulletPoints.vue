@@ -27,22 +27,23 @@ export default {
       bulletPoints: [
         {
           title: 'Borrels',
-          description: `Elke week borrelen we met veel plezier.
-            Kost wat centen, maar dan heb je ook wat. Een biertje bijvoorbeeld.`
+          description: `Elke week borrelen we met plezier met z’n allen. Of het nou een gin tonic is, een biertje, of
+            een frisje, het is altijd gezellig.`
         },
         {
           title: 'Feesten',
-          description: `Woehoe feestje hier, feestje daar. Wat een gebaar. Ben er bij of wordt vierkant,
-            zoals een dubbeltje.`
+          description: `Wees bij of wees vierkant, af en toe transformeren wij de bar en organiseren wij een groots
+            feest op ons pand.`
         },
         {
           title: 'Activiteiten',
-          description: `Soms doen we iets wat een activiteit noemen, ook erg leuk hoor. Lekker zingen ofzo. 
-            Durf jij het aan?`
+          description: `Door het jaar heen organiseren we ook wat kleinere activiteiten , of het nou karaoke is,
+            spelletjesavond, of een cocktail workshop, er is altijd wel wat leuks`
         },
         {
           title: 'Sociale Contacten',
-          description: 'Ja lekker mensen leren kennen en samen WhatsAppen enzo, voor iedereen super leuk.'
+          description: 'Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen met diverse
+            interesses, altijd wel iemand om mee te praten dus!'
         }
       ]
     }

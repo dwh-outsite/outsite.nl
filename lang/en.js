@@ -2,13 +2,13 @@ import barbuddies from '~/lang/en_barbuddies.js'
 
 export default {
   menu: [
-    { title: 'Home', url: localePath => localePath('index') },
-    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
-    { title: 'Reservations', url: () => '/book' },
-    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
-    { title: 'Committees', url: localePath => localePath('committees') },
-    { title: 'Testimonials', url: localePath => localePath('testimonials') },
-    { title: 'Contact', url: () => '#contact' }
+    {title: 'Home', url: localePath => localePath('index')},
+    {title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite'},
+    {title: 'Reservations', url: () => '/book'},
+    {title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout'},
+    {title: 'Committees', url: localePath => localePath('committees')},
+    {title: 'Testimonials', url: localePath => localePath('testimonials')},
+    {title: 'Contact', url: () => '#contact'}
   ],
   hero: {
     title: `Delft's LGBT+ Youth Association`,
@@ -178,15 +178,24 @@ export default {
     }
   },
   barbuddies,
+  committees: {
+    title: 'Committees',
+    introduction: `
+      At Outsite we have many fun and challenging committees. We are of course always looking for new committee members,
+      so be sure to check out the various committees we have below. Who knows, you might get to organise a fun activity
+      this year!
+    `,
+    list: committees
+  },
   signup: {
     title: 'Membership Signup',
     main_text: `
-      Outsite is a part of the LGBT+-association DWH. By becoming a member you support us in the things
-      that we find important, like the introduction groups, education  at secondary schools, the movie night,
-      the bar nights and all other activities at DWH.<br />
+      Outsite is part of the LGBT+ association DWH. By becoming a member you support us in our actions, such as the
+      “kennigsmakingsgroep”, sex education in secondary schools, film nights, bar evenings and other activities at
+      DWH.<br />
       <br />
-      As a member you receive the magazine from DWH: the Andersblad, and you can join the EatingOUT where you can enjoy
-      a cheap and delicious meal.
+      As a member, you’ll receive the magazine of DWH: “Het Andersblad”, and you can join us at the weekly EatingOUT
+      where you can can enjoy nice meal together with other’s from the association.
     `,
     fee_description: `
       The contribution fee of DWH is a minimum of € 48,50 / € 25,00  per year. A higher amount is of course very
