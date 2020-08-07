@@ -43,10 +43,7 @@
           </div>
           <div class="md:w-2/5 flex flex-col justify-between space-y-4">
             <div class="flex-1 rounded-lg shadow overflow-hidden">
-              <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full w-full" />
-            </div>
-            <div class="flex-1 rounded-lg shadow overflow-hidden">
-              <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full w-full" />
+              <img :src="requireImage(activeCommittee.name)" class="object-cover h-full w-full" />
             </div>
           </div>
         </div>
@@ -80,6 +77,9 @@ export default {
         committee.active = false
       })
       committee.active = true
+    },
+    requireImage(name) {
+      return require(`@/assets/images/photos/committees/${name.toLowerCase().replace(/ /g, '')}.jpg`)
     }
   }
 }
