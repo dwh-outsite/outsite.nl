@@ -2,10 +2,10 @@ export default [
   {
     name: 'OUTcamp',
     description: `
-      OUTcamp is de commissie die het jaarlijkse spectaculaire kamp organiseert voor Outsite. Het kamp is een goede
-      introductie voor nieuwe mensen, maar het is ook heel populair bij mensen die al wat langer komen. De afgelopen
-      jaren hebben we wat leuke thema's gehad, zoals: “let it gay!” en “Holigay Twist”. Het kamp is altijd een feestje
-      met kampvuur, spelletjes en heeuul veel wijn!
+      OUTcamp is the committee that organises the spectacular yearly camp for Outsite. The camp is a good introduction
+      for new members, but also a lot of fun for people who’ve been to Outsite before. The last few year we’ve had quite
+      some fun themes like: “let it gay!” and “holigay twist”. The camp is always a party with campfires, games and lots
+      and lots of wine!
     `
   },
   {
@@ -50,13 +50,10 @@ export default [
   {
     name: 'OWee Committee',
     description: `
-      De OWee commissie zorgt elk jaar dat de ontvangstweek van Delft goed verloopt. Deze commissie is super leuk
-      en hecht omdat het een grote opgave is waar je heel erg naartoe leeft. Als je dan in een volle OWee allemaal
-      gave events neerzet zoals feesten, escaperooms en de homobingo geeft het een heel goed gevoel als nieuwe
-      studenten daar plezier aan beleven en misschien wel aansluiten bij Outsite :) 
+      The OWee committee ensures that the introduction week in Delft runs smoothly every year. This committee is super
+      fun and close because it is a big task that you live up to very much. If you have all this cool events in the
+      OWee such as parties, escape rooms and gay bingo, it gives a very good feeling when new students enjoy this and
+      maybe join Outsite :)
     `
-  },
-  {
-    name: 'Others'
   }
 ]

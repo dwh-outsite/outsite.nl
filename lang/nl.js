@@ -1,5 +1,5 @@
 import barbuddies from '~/lang/nl_barbuddies.js'
-import committees from '~/lang/committees.js'
+import committees from '~/lang/nl_committees.js'
 import testimonials from '~/lang/nl_testimonials.js'
 import highlights from '~/lang/en_highlights.js'
 

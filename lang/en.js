@@ -1,5 +1,6 @@
 import barbuddies from '~/lang/en_barbuddies.js'
-import committees from '~/lang/committees.js'
+import committees from '~/lang/en_committees.js'
+import highlights from '~/lang/en_highlights.js'
 
 export default {
   menu: [
@@ -261,6 +262,13 @@ export default {
       this year!
     `,
     list: committees
+  },
+  highlights: {
+    title: 'Our Highlights',
+    title_homepage: 'Our <strong>Highlights</strong>',
+    more: 'More highlights',
+    read_more: 'Read more about this activity',
+    list: highlights
   },
   signup: {
     title: 'Membership Signup',

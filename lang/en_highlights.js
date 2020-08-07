@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Kerstdiner',
+    title: 'Christmas Dinner',
     description: `
       Last Christmas we had a lovely Christmas dinner together with the Outsite family, with four courses prepared by
       hard working members. This is a yearly activity which really binds us together.
@@ -11,7 +11,7 @@ export default [
     `
   },
   {
-    title: 'OWee Pink Feest',
+    title: 'OWee Pink Party',
     description: `
       Last Owee had a “pink party”, where the whole bar was covered in pink, everyone wore pink, and of course the
       drinks were pink as well. It’s all possible during the OWee.
