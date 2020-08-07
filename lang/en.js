@@ -1,6 +1,7 @@
 import barbuddies from '~/lang/en_barbuddies.js'
 import committees from '~/lang/en_committees.js'
 import highlights from '~/lang/en_highlights.js'
+import testimonials from '~/lang/en_testimonials.js'
 
 export default {
   menu: [
@@ -254,6 +255,11 @@ export default {
     }
   },
   barbuddies,
+  testimonials: {
+    title: 'Testimonials',
+    read_more: 'Read more',
+    members: testimonials
+  },
   committees: {
     title: 'Committees',
     introduction: `

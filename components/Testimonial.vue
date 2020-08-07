@@ -57,7 +57,9 @@
                 <div class="absolute text-mega text-pink-100 -ml-6 -mt-20 pt-2 z-0">“</div>
                 <div class="text-xl z-10 pt-2">
                   {{ testimonial.quote }}
-                  <a :href="localePath('testimonials')" class="text-pink-500">Lees meer &raquo;</a>
+                  <a :href="localePath('testimonials')" class="text-pink-500">
+                    {{ $t('testimonials.read_more') }} &raquo;
+                  </a>
                 </div>
                 <div>
                   <span v-text="testimonial.author.name" class="uppercase tracking-wide font-bold text-pink-400 mr-1" />

@@ -255,6 +255,7 @@ export default {
   barbuddies,
   testimonials: {
     title: 'Testimonials',
+    read_more: 'Lees meer',
     members: testimonials
   },
   committees: {
