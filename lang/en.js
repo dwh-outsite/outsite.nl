@@ -20,14 +20,35 @@ export default {
   description: {
     text: `Outsite is here for everybody 28 and under who identifies as LGBT+. Outsite organises all kinds of
       activities, ranging from drinks every Thursday night and quarterly LGBT+ parties to trips to other cities where
-      we go out together. Outsite is a part of<a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, the LGBT+
-      association of Delft. <br>
+      we go out together. Outsite is a part of <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, the
+      LGBT+ association of Delft. <br>
       <br>
       These activities are all organized by our fantastic committees and members! The best way to become acquainted with
       Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
       system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
   },
+  bulletPoints: [
+    {
+      title: 'Drinks',
+      description: `We have drinks together every week. Whether it’s a gin and tonic, a beer, or something else,
+        it’s always fun!`
+    },
+    {
+      title: 'Parties',
+      description: `Be there or be square, every so often we transform the bar and organise a big party.`
+    },
+    {
+      title: 'Activities',
+      description: `Throughout the year we organise a lot of activities, such as a karaoke, game
+        night, or a cocktail workshop.`
+    },
+    {
+      title: 'Sociale Contacten',
+      description: `We’re one big family, you get to meet a lot of new people with diverse interests.
+        So lots of people to talk to!`
+    }
+  ],
   activities: {
     title: 'Upcoming activities',
     defaults: {

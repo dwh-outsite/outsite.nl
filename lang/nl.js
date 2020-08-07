@@ -39,17 +39,17 @@ export default {
     {
       title: 'Feesten',
       description: `Wees bij of wees vierkant, af en toe transformeren wij de bar en organiseren wij een groots
-        feest op ons pand.`
+        feest in ons pand.`
     },
     {
       title: 'Activiteiten',
-      description: `Door het jaar heen organiseren we ook wat kleinere activiteiten , of het nou karaoke is,
-        spelletjesavond, of een cocktail workshop, er is altijd wel wat leuks`
+      description: `Door het jaar heen organiseren we allerlei activiteiten, zoals een karaoke,
+        spelletjesavond, of cocktailworkshop`
     },
     {
       title: 'Sociale Contacten',
-      description: `Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen met diverse
-        interesses, altijd wel iemand om mee te praten dus!`
+      description: `Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen, altijd wel
+        iemand om mee te praten dus!`
     }
   ],
   activities: {
