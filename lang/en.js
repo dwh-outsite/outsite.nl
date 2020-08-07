@@ -91,6 +91,59 @@ export default {
       barbuddies_title: 'Our <strong>Bar Buddies</strong>',
       read_more: 'Read more',
       read_less: 'Collapse'
+    },
+    membership: {
+      title: 'Become an Outsite member',
+      description: `
+        Outsite is open to everyone up to 28 who identifies as LGBTQ+. A variety of activities are organized by members,
+        from weekly drinks on Thursday evenings, to big dance parties every quarter or going out in other cities. Make
+        sure to sign up to always get updates about the latest events!
+      `,
+      button: 'Sign up now',
+      advantages: [
+        {
+          icon: 'factory',
+          title: 'Wekelijkse Borrel',
+          description: `
+            Every Thursday we come together cozy bar night or fun activity.
+          `
+        },
+        {
+          icon: 'tablet',
+          title: 'Fun WhatsApp Groups',
+          description: `
+          We have fun WhatsApp groups where you can chat with other members.
+          `
+        },
+        {
+          icon: 'travel-walk',
+          title: 'Cool Activities',
+          description: `
+            Our members organise many activities throughout the year.
+          `
+        },
+        {
+          icon: 'location-food',
+          title: 'Weekly Dinner',
+          description: `
+            Every Tuesday we enjoy a meal prepared by one of our members.
+          `
+        },
+        {
+          icon: 'layers',
+          title: 'No Obligations',
+          description: `
+            No obligations, no hazing, and easy to combine with studies.
+          `
+        },
+        {
+          icon: 'target',
+          title: 'Personal Development',
+          description: `
+            Improve you own skills by joining a committee or maybe even the board?
+          `
+        }
+      ]
     }
   },
   video: {

@@ -11,15 +11,12 @@
               <Zondicon icon="compose" class="fill-current" />
             </div>
             <h2 class="text-xl font-bold uppercase tracking-wider">
-              Lid worden bij Outsite
+              {{ $t('ways_to_join.membership.title') }}
             </h2>
           </div>
 
           <p class="text-lg md:text-xl text-white font-semibold mb-6">
-            Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBTQ+. Er worden allerlei
-            activiteiten georganiseerd door vrijwilligers, van wekelijkse borrels op de donderdagavond, tot grote
-            dansfeesten elk kwartaal en uitgaan in andere steden. Schrijf je in zodat je altijd op de hoogte bent van
-            alle activiteiten!
+            {{ $t('ways_to_join.membership.description') }}
           </p>
 
           <a :href="localePath('signup')">
@@ -29,13 +26,17 @@
                 hover:bg-pink-100
               "
             >
-              Schrijf je nu in
+              {{ $t('ways_to_join.membership.button') }}
               <Zondicon icon="arrow-right" class="fill-current w-3 h-3 ml-2" />
             </button>
           </a>
         </div>
         <div class="flex flex-wrap -mx-2 pt-6 px-8">
-          <div v-for="advantage in membershipAdvantages" :key="advantage.title" class="mb-4 md:w-1/2">
+          <div
+            v-for="advantage in $t('ways_to_join.membership.advantages')"
+            :key="advantage.title"
+            class="mb-4 md:w-1/2"
+          >
             <div class="h-full bg-white rounded-lg p-3 pr-4 items-center text-gray-900 mx-2 leading-snug shadow-md">
               <div class="flex items-center mb-1">
                 <div class="rounded-full w-8 h-8 p-2 bg-pink-400 mr-3 text-white">
@@ -118,55 +119,7 @@ export default {
     'rightButtonText',
     'leftUrl',
     'rightUrl'
-  ],
-  data() {
-    return {
-      membershipAdvantages: [
-        {
-          icon: 'factory',
-          title: 'Wekelijkse Borrel',
-          description: `
-            Iedere donderdag komen we samen voor een gezellige borrel of leuke activiteit.
-          `
-        },
-        {
-          icon: 'tablet',
-          title: 'Gezellige WhatsAppgroepen',
-          description: `
-            We hebben een leuke WhatsApp groep waar je gezellig kan chatten met iedereen.
-          `
-        },
-        {
-          icon: 'travel-walk',
-          title: 'Leuke activiteiten',
-          description: `
-            Onze vrijwilligers organiseren vele leuke activiteiten door het jaar heen.
-          `
-        },
-        {
-          icon: 'location-food',
-          title: 'Wekelijkse Eettafel',
-          description: `
-            Iedere dinsdag eten wij gezamenlijk een maaltijd bereid door een lid.
-          `
-        },
-        {
-          icon: 'layers',
-          title: 'Geen verplichtingen',
-          description: `
-            Geen verplichtingen, geen ontgroening, en te combineren met studie.
-          `
-        },
-        {
-          icon: 'target',
-          title: 'Persoonlijke ontwikkeling',
-          description: `
-            Leer jezelf en andere beter kennen.
-          `
-        }
-      ]
-    }
-  }
+  ]
 }
 </script>
 

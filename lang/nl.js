@@ -93,6 +93,59 @@ export default {
       barbuddies_title: 'Onze <strong>Barbuddies</strong>',
       read_more: 'Lees meer',
       read_less: 'Inklappen'
+    },
+    membership: {
+      title: 'Lid worden bij Outsite',
+      description: `
+        Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBT+. Er worden allerlei
+        activiteiten georganiseerd, van wekelijkse borrels op de donderdagavond, tot grote dansfeesten en uitgaan in
+        andere steden. Schrijf je in zodat je altijd op de hoogte bent van alle activiteiten!
+      `,
+      button: 'Schrijf je nu in',
+      advantages: [
+        {
+          icon: 'factory',
+          title: 'Wekelijkse Borrel',
+          description: `
+            Iedere donderdag komen we samen voor een gezellige borrel of leuke activiteit.
+          `
+        },
+        {
+          icon: 'tablet',
+          title: 'Gezellige WhatsAppgroepen',
+          description: `
+            We hebben leuke WhatsAppgroepen waar je gezellig kan chatten.
+          `
+        },
+        {
+          icon: 'travel-walk',
+          title: 'Leuke activiteiten',
+          description: `
+            Onze leden organiseren vele leuke activiteiten door het jaar heen.
+          `
+        },
+        {
+          icon: 'location-food',
+          title: 'Wekelijkse Eettafel',
+          description: `
+            Iedere dinsdag eten wij gezamenlijk een maaltijd bereid door een lid.
+          `
+        },
+        {
+          icon: 'layers',
+          title: 'Geen verplichtingen',
+          description: `
+            Geen verplichtingen, geen ontgroening, en te combineren met studie.
+          `
+        },
+        {
+          icon: 'target',
+          title: 'Persoonlijke ontwikkeling',
+          description: `
+            Werk aan jezelf door een commissie te joinen of misschien wel het bestuur?
+          `
+        }
+      ]
     }
   },
   video: {
