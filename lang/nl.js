@@ -5,13 +5,13 @@ import highlights from '~/lang/en_highlights.js'
 
 export default {
   menu: [
-    {title: 'Home', url: localePath => localePath('index')},
-    {title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite'},
-    {title: 'Reserveren', url: () => '/reserveer'},
-    {title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout'},
-    {title: 'Commissies', url: localePath => localePath('committees')},
-    {title: 'Ervaringen', url: localePath => localePath('testimonials')},
-    {title: 'Contact', url: () => '#contact'}
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
+    { title: 'Reserveren', url: () => '/reserveer' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Commissies', url: localePath => localePath('committees') },
+    { title: 'Ervaringen', url: localePath => localePath('testimonials') },
+    { title: 'Contact', url: () => '#contact' }
   ],
   hero: {
     title: 'Delftse LHBT+ jongerenvereniging',
@@ -30,6 +30,28 @@ export default {
       van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`,
     invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
   },
+  bulletPoints: [
+    {
+      title: 'Borrels',
+      description: `Elke week borrelen we met plezier met z’n allen. Of het nou een gin tonic is, een biertje, of
+        een frisje, het is altijd gezellig.`
+    },
+    {
+      title: 'Feesten',
+      description: `Wees bij of wees vierkant, af en toe transformeren wij de bar en organiseren wij een groots
+        feest op ons pand.`
+    },
+    {
+      title: 'Activiteiten',
+      description: `Door het jaar heen organiseren we ook wat kleinere activiteiten , of het nou karaoke is,
+        spelletjesavond, of een cocktail workshop, er is altijd wel wat leuks`
+    },
+    {
+      title: 'Sociale Contacten',
+      description: `Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen met diverse
+        interesses, altijd wel iemand om mee te praten dus!`
+    }
+  ],
   activities: {
     title: 'Aankomende activiteiten',
     defaults: {
@@ -202,8 +224,9 @@ export default {
   signup: {
     title: 'Inschrijven als DWH lid',
     main_text: `
-      Outsite is onderdeel van de LHBTQ+ vereniging DWH. Door lid te worden steun je ons in dingen die we belangrijk
-      vinden, zoals de kennismakingsgroep, voorlichting op middelbare scholen, filmavonden, baravonden en alle andere activiteiten bij DWH.<br />
+      Outsite is onderdeel van de LHBT+ vereniging DWH. Door lid te worden steun je ons in dingen die we belangrijk
+      vinden, zoals de kennismakingsgroep, voorlichting op middelbare scholen, filmavonden, baravonden en alle
+      andere activiteiten bij de vereniging.<br />
       <br />
       Als lid ontvang je het blad van DWH: Het Andersblad en mag bij de EatingOUT aanschuiven waar je lekker, gezellig
       en goedkoop kan eten.

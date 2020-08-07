@@ -18,8 +18,8 @@
           <p class="text-lg md:text-xl text-white font-semibold mb-6">
             Outsite is er voor iedereen tot en met 28 jaar die zich identificeert als LHBTQ+. Er worden allerlei
             activiteiten georganiseerd door vrijwilligers, van wekelijkse borrels op de donderdagavond, tot grote
-            dansfeesten elk kwartaal en uitgaan in andere steden. Schrijf je in zodat je altijd op de hoogte bent
-            van alle activiteiten!
+            dansfeesten elk kwartaal en uitgaan in andere steden. Schrijf je in zodat je altijd op de hoogte bent van
+            alle activiteiten!
           </p>
 
           <a :href="localePath('signup')">

@@ -1,14 +1,15 @@
 import barbuddies from '~/lang/en_barbuddies.js'
+import committees from '~/lang/committees.js'
 
 export default {
   menu: [
-    {title: 'Home', url: localePath => localePath('index')},
-    {title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite'},
-    {title: 'Reservations', url: () => '/book'},
-    {title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout'},
-    {title: 'Committees', url: localePath => localePath('committees')},
-    {title: 'Testimonials', url: localePath => localePath('testimonials')},
-    {title: 'Contact', url: () => '#contact'}
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
+    { title: 'Reservations', url: () => '/book' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Committees', url: localePath => localePath('committees') },
+    { title: 'Testimonials', url: localePath => localePath('testimonials') },
+    { title: 'Contact', url: () => '#contact' }
   ],
   hero: {
     title: `Delft's LGBT+ Youth Association`,
@@ -181,7 +182,7 @@ export default {
   committees: {
     title: 'Committees',
     introduction: `
-      At Outsite we have many fun and challenging committees. We are of course always looking for new committee members,
+      At Outsite we have many fun and challenging committees. We are of course always looking for new committeemembers,
       so be sure to check out the various committees we have below. Who knows, you might get to organise a fun activity
       this year!
     `,
