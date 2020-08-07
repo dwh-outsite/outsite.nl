@@ -92,7 +92,7 @@
             </label>
             <label class="radio">
               <input v-model="form.membership_fee" type="radio" value="discounted" />
-              {{ $t('signup.fees.discounted') }}
+              <span v-html="$t('signup.fees.discounted')" />
             </label>
           </p>
           <p class="form-element">

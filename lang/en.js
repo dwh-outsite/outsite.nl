@@ -311,7 +311,10 @@ export default {
     `,
     fees: {
       full: 'Regular (€ 48,50)',
-      discounted: 'Reduced (€ 25,00)'
+      discounted: `
+        Reduced (€ 25,00) <strong>| OWee deal:</strong> for the remaining months of this year you pay only 10 euros!
+        In the next calendar year, the regular fee will be charged
+      `
     }
   }
 }

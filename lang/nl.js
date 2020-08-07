@@ -212,6 +212,7 @@ export default {
       postal_code: 'Postcode',
       pronouns: 'Pronouns',
       barbuddy: 'Met wie wil je afspreken?',
+      membership_fee: 'Contributie (zie onderaan deze pagina)',
       iban: 'IBAN nummer voor betaling via automatisch incasso'
     },
     placeholder: {
@@ -310,7 +311,10 @@ export default {
     `,
     fees: {
       full: 'Normaal (€ 48,50)',
-      discounted: 'Gereduceerd (€ 25,00)'
+      discounted: `
+        Gereduceerd (€ 25,00) <strong>| OWee deal:</strong> voor de rest van dit jaar betaal je slechts 10 euro!
+        Vanaf volgend kalenderjaar geldt het normale tarief 
+      `
     }
   }
 }
