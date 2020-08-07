@@ -8,10 +8,13 @@
       >
         <div class="">
           <div class="w-full h-40 rounded-t overflow-hidden mx-auto">
-            <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
+            <img
+              :src="require(`@/assets/images/photos/bullets/bullet_${point.image}.png`)"
+              class="object-cover w-full"
+            />
           </div>
         </div>
-        <div class="w-full p-6">
+        <div class="w-full p-6 pt-3">
           <div class="uppercase mx-auto font-bold tracking-wider text-2xl text-pink-400 mb-1">
             {{ point.title }}
           </div>

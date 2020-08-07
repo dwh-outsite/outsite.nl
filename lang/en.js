@@ -34,21 +34,25 @@ export default {
     {
       title: 'Drinks',
       description: `We have drinks together every week. Whether it’s a gin and tonic, a beer, or something else,
-        it’s always fun!`
+        it’s always fun!`,
+      image: 'drinks'
     },
     {
       title: 'Parties',
-      description: `Be there or be square, every so often we transform the bar and organise a big party.`
+      description: `Be there or be square, every so often we transform the bar and organise a big party.`,
+      image: 'parties'
     },
     {
       title: 'Activities',
       description: `Throughout the year we organise a lot of activities, such as a karaoke, game
-        night, or a cocktail workshop.`
+        night, or a cocktail workshop.`,
+      image: 'activities'
     },
     {
-      title: 'Sociale Contacten',
+      title: 'Social Contacts',
       description: `We’re one big family, you get to meet a lot of new people with diverse interests.
-        So lots of people to talk to!`
+        So lots of people to talk to!`,
+      image: 'social'
     }
   ],
   activities: {

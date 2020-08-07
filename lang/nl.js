@@ -34,22 +34,26 @@ export default {
     {
       title: 'Borrels',
       description: `Elke week borrelen we met plezier met z’n allen. Of het nou een gin tonic is, een biertje, of
-        een frisje, het is altijd gezellig.`
+        een frisje, het is altijd gezellig.`,
+      image: 'drinks'
     },
     {
       title: 'Feesten',
       description: `Wees bij of wees vierkant, af en toe transformeren wij de bar en organiseren wij een groots
-        feest in ons pand.`
+        feest in ons pand.`,
+      image: 'parties'
     },
     {
       title: 'Activiteiten',
       description: `Door het jaar heen organiseren we allerlei activiteiten, zoals een karaoke,
-        spelletjesavond, of cocktailworkshop`
+        spelletjesavond, of cocktailworkshop`,
+      image: 'activities'
     },
     {
       title: 'Sociale Contacten',
       description: `Uiteindelijk zijn wij een grote familie, je leert in korte tijd vele mensen kennen, altijd wel
-        iemand om mee te praten dus!`
+        iemand om mee te praten dus!`,
+      image: 'social'
     }
   ],
   activities: {
