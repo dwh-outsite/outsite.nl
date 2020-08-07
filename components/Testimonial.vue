@@ -11,7 +11,7 @@
         <transition name="slide-right">
           <div v-show="index === active" class="absolute w-full text-center">
             <div class="w-32 h-32 rounded-full overflow-hidden -mt-16 mx-auto">
-              <img src="~/assets/images/photos/eatingout/eatingout.jpg" class="object-cover h-full" />
+              <img :src="requireImage(testimonial.author.name)" class="object-cover h-full" />
             </div>
             <div class="bg-white-gradient-vertical">
               <div>
