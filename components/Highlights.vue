@@ -64,9 +64,7 @@ export default {
   props: ['excerpts'],
   data() {
     return {
-      highlights: this.$t('highlights.list')
-        .sort(() => Math.random() - Math.random())
-        .slice(0, this.excerpts ? 3 : this.$t('highlights.list').length)
+      highlights: this.$t('highlights.list').slice(0, this.excerpts ? 3 : this.$t('highlights.list').length)
     }
   }
 }
