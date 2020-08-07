@@ -1,6 +1,18 @@
 import barbuddies from '~/lang/en_barbuddies.js'
+import committees from '~/lang/en_committees.js'
+import highlights from '~/lang/en_highlights.js'
+import testimonials from '~/lang/en_testimonials.js'
 
 export default {
+  menu: [
+    { title: 'Home', url: localePath => localePath('index') },
+    { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
+    { title: 'Reservations', url: () => '/book' },
+    { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
+    { title: 'Committees', url: localePath => localePath('committees') },
+    { title: 'Testimonials', url: localePath => localePath('testimonials') },
+    { title: 'Contact', url: () => '#contact' }
+  ],
   hero: {
     title: `Delft's LGBT+ Youth Association`,
     subtitle: `for everyone up to 28 years`,
@@ -10,14 +22,39 @@ export default {
   description: {
     text: `Outsite is here for everybody 28 and under who identifies as LGBT+. Outsite organises all kinds of
       activities, ranging from drinks every Thursday night and quarterly LGBT+ parties to trips to other cities where
-      we go out together. Outsite is a part of<a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, the LGBT+
-      association of Delft. <br>
+      we go out together. Outsite is a part of <a href="https://www.dwhdelft.nl" class="text-pink-400">DWH</a>, the
+      LGBT+ association of Delft. <br>
       <br>
       These activities are all organized by our fantastic committees and members! The best way to become acquainted with
       Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
       system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
     invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
   },
+  bulletPoints: [
+    {
+      title: 'Drinks',
+      description: `We have drinks together every week. Whether it’s a gin and tonic, a beer, or something else,
+        it’s always fun!`,
+      image: 'drinks'
+    },
+    {
+      title: 'Parties',
+      description: `Be there or be square, every so often we transform the bar and organise a big party.`,
+      image: 'parties'
+    },
+    {
+      title: 'Activities',
+      description: `Throughout the year we organise a lot of activities, such as a karaoke, game
+        night, or a cocktail workshop.`,
+      image: 'activities'
+    },
+    {
+      title: 'Social Contacts',
+      description: `We’re one big family, you get to meet a lot of new people with diverse interests.
+        So lots of people to talk to!`,
+      image: 'social'
+    }
+  ],
   activities: {
     title: 'Upcoming activities',
     defaults: {
@@ -60,6 +97,59 @@ export default {
       barbuddies_title: 'Our <strong>Bar Buddies</strong>',
       read_more: 'Read more',
       read_less: 'Collapse'
+    },
+    membership: {
+      title: 'Become an Outsite member',
+      description: `
+        Outsite is open to everyone up to 28 who identifies as LGBTQ+. A variety of activities are organized by members,
+        from weekly drinks on Thursday evenings, to big dance parties every quarter or going out in other cities. Make
+        sure to sign up to always get updates about the latest events!
+      `,
+      button: 'Sign up now',
+      advantages: [
+        {
+          icon: 'factory',
+          title: 'Wekelijkse Borrel',
+          description: `
+            Every Thursday we come together cozy bar night or fun activity.
+          `
+        },
+        {
+          icon: 'tablet',
+          title: 'Fun WhatsApp Groups',
+          description: `
+          We have fun WhatsApp groups where you can chat with other members.
+          `
+        },
+        {
+          icon: 'travel-walk',
+          title: 'Cool Activities',
+          description: `
+            Our members organise many activities throughout the year.
+          `
+        },
+        {
+          icon: 'location-food',
+          title: 'Weekly Dinner',
+          description: `
+            Every Tuesday we enjoy a meal prepared by one of our members.
+          `
+        },
+        {
+          icon: 'layers',
+          title: 'No Obligations',
+          description: `
+            No obligations, no hazing, and easy to combine with studies.
+          `
+        },
+        {
+          icon: 'target',
+          title: 'Personal Development',
+          description: `
+            Improve you own skills by joining a committee or maybe even the board?
+          `
+        }
+      ]
     }
   },
   video: {
@@ -105,6 +195,9 @@ export default {
   forms: {
     label: {
       name: 'How should we call you?',
+      firstname: 'First Name',
+      lastname: 'Last Name',
+      initials: 'Initials',
       email: 'Email address',
       language: 'Language',
       languages: {
@@ -116,17 +209,27 @@ export default {
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
       residence: 'City of residence',
+      address: 'Address',
+      postal_code: 'Postal Code',
       pronouns: 'Pronouns',
-      barbuddy: 'Who would you like to meet?'
+      barbuddy: 'Who would you like to meet?',
+      membership_fee: 'Membership Fee (see below)',
+      iban: 'IBAN number for payment by direct debit'
     },
     placeholder: {
       name: 'Name',
+      firstname: 'First name',
+      lastname: 'Last name',
+      initials: 'Initials (for example Q.B.)',
       email: 'Email address',
       remarks: 'Remarks or questions',
       date_of_birth: 'Date of birth',
       phone_number: 'Phone number',
       residence: 'City name',
-      pronouns: 'e.g. she/her, he/him, they/them'
+      address: 'Address',
+      postal_code: 'Postal code (for example 2611PV)',
+      pronouns: 'e.g. she/her, he/him, they/them',
+      iban: 'IBAN number'
     },
     buttons: {
       sign_up: 'Sign up',
@@ -136,7 +239,8 @@ export default {
       heading: 'The form has been submitted successfully',
       barbuddy: 'The bar buddy you selected will contact you as soon as possible.',
       whatsapp: `We'll add you to the group as soon as possible!`,
-      contact_soon: 'We will contact you as soon as possible.'
+      contact_soon: 'We will contact you as soon as possible.',
+      membership: 'We will send you an e-mail soon to confirm your membership.'
     }
   },
   footer: {
@@ -154,5 +258,63 @@ export default {
       external_affairs: 'External Affairs'
     }
   },
-  barbuddies
+  barbuddies,
+  testimonials: {
+    title: 'Testimonials',
+    read_more: 'Read more',
+    members: testimonials
+  },
+  committees: {
+    title: 'Committees',
+    introduction: `
+      At Outsite we have many fun and challenging committees. We are of course always looking for new committeemembers,
+      so be sure to check out the various committees we have below. Who knows, you might get to organise a fun activity
+      this year!
+    `,
+    list: committees
+  },
+  highlights: {
+    title: 'Our Highlights',
+    title_homepage: 'Our <strong>Highlights</strong>',
+    more: 'More highlights',
+    read_more: 'Read more about this activity',
+    list: highlights
+  },
+  signup: {
+    title: 'Membership Signup',
+    main_text: `
+      Outsite is part of the LGBT+ association DWH. By becoming a member you support us in our actions, such as the
+      “kennigsmakingsgroep”, sex education in secondary schools, film nights, bar evenings and other activities at
+      DWH.<br />
+      <br />
+      As a member, you’ll receive the magazine of DWH: “Het Andersblad”, and you can join us at the weekly EatingOUT
+      where you can can enjoy nice meal together with other’s from the association.
+    `,
+    fee_description: `
+      The contribution fee of DWH is a minimum of € 48,50 / € 25,00  per year. A higher amount is of course very
+      welcome.<br />
+      <br />
+      In a general assembly meeting, it was decided that the price differentiation for the membership fee is based on
+      the ability to pay. In order not to make it too complicated, we use the following rule of thumb: For people aged
+      under 25 or from pension age, the reduced fee of at least € 25,00 is applied.
+      All other members pay the standard fee of € 48,50.<br />
+      <br />
+      There are exceptions:
+      <ul class="list-disc ml-8">
+        <li>People who would get the reduced rate but earn enough to pay for the standard rate, should pay the standard
+            rate.</li>
+        <li>People who would not get the reduced rate but can’t financially cope with paying the standard rate can
+            contact the treasurer.</li>
+        <li>When there is a change in the situation that would effect any of the above exceptions, it should be reported
+            to the treasurer.</li>
+      </ul>
+    `,
+    fees: {
+      full: 'Regular (€ 48,50)',
+      discounted: `
+        Reduced (€ 25,00) <strong>| OWee deal:</strong> for the remaining months of this year you pay only 10 euros!
+        In the next calendar year, the regular fee will be charged
+      `
+    }
+  }
 }

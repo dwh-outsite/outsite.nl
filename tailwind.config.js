@@ -12,7 +12,8 @@ module.exports = {
         80: '20rem'
       },
       width: {
-        7: '1.75rem'
+        7: '1.75rem',
+        80: '20rem'
       },
       maxWidth: {
         56: '14rem'
@@ -20,6 +21,7 @@ module.exports = {
       colors: {
         pink: {
           ...colors.pink,
+          100: '#ffe4f4',
           200: '#ff9ad8',
           400: '#FC66C2'
         },
@@ -33,7 +35,11 @@ module.exports = {
       inset: {
         '-8': '-2rem',
         '-16': '-4rem',
-        '-14': '-3.5rem'
+        '-14': '-3.5rem',
+        16: '4rem'
+      },
+      fontSize: {
+        mega: '10rem'
       }
     },
     aspectRatio: {
@@ -46,7 +52,7 @@ module.exports = {
   },
   variants: {
     aspectRatio: ['responsive'],
-    backgroundColor: ['disabled']
+    backgroundColor: ['disabled', 'responsive', 'hover', 'focus']
   },
   plugins: [
     require('tailwind-heropatterns')({
@@ -72,5 +78,6 @@ module.exports = {
     }),
     require('tailwindcss-responsive-embed')(),
     require('tailwindcss-aspect-ratio')()
-  ]
+  ],
+  purge: false
 }

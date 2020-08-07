@@ -8,14 +8,14 @@
         <h2 class="text-2xl text-white mt-2 font-light">
           {{ $t('hero.subtitle') }}
         </h2>
-        <div class="mt-8 flex">
+        <div class="mt-8 md:flex md:space-x-4">
           <a href="#join-outsite">
-            <button class="block button-pink">
+            <button class="block button-pink mb-2 md:mb-0">
               {{ $t('hero.leftButton') }}
             </button>
           </a>
           <a href="#video">
-            <button class="block ml-4 button-white">
+            <button class="block button-white">
               {{ $t('hero.rightButton') }}
             </button>
           </a>
@@ -50,8 +50,18 @@
       </div>
     </section>
 
-    <section class="information relative pt-12">
-      <Activities :title="$t('activities.title')" />
+    <section class="relative">
+      <div class="information bg-gray-400 relative -mb-48">
+        <div class="information-content -mt-48">
+          <div class="pb-48 pt-48">
+            <BulletPoints class="relative x-50 z-20 pt-20 md:pt-40 pb-12 md:pb-16" />
+          </div>
+
+          <div class="image-container">
+            <img src="~/assets/images/cover.jpg" class="opacity-25" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="join-outsite" class="bg-pink-200 bg-hero-falling-triangles">
@@ -75,8 +85,17 @@
       </JoinOptions>
     </section>
 
-    <section id="video" class="bg-white">
+    <section class="relative t2">
+      <Highlights :excerpts="true" />
+    </section>
+
+    <section id="video" class="mb-24">
       <Video :title="$t('video.title')" url="https://www.youtube-nocookie.com/embed/zWWvERxW5rM" />
+    </section>
+
+    <section id="activities" class="relative page-ender pt-48 md:pt-20">
+      <Testimonial class="absolute left-0 right-0 -mt-64 md:-mt-40" />
+      <Activities :title="$t('activities.title')" />
     </section>
 
     <section id="eatingout" class="bg-gray-200">
@@ -96,18 +115,24 @@ import Zondicon from 'vue-zondicons'
 import Panda from '@/assets/images/outsite_panda_cropped.svg'
 
 import Header from '~/components/Header'
-import Activities from '~/components/Activities'
+import BulletPoints from '~/components/BulletPoints'
 import JoinOptions from '~/components/JoinOptions'
+import Highlights from '~/components/Highlights'
 import Video from '~/components/Video'
+import Testimonial from '~/components/Testimonial'
+import Activities from '~/components/Activities'
 import EatingOut from '~/components/EatingOut'
 
 export default {
   components: {
     Header,
     Panda,
-    Activities,
+    BulletPoints,
     JoinOptions,
+    Highlights,
     Video,
+    Testimonial,
+    Activities,
     EatingOut,
     Zondicon
   },
@@ -120,9 +145,29 @@ export default {
 </script>
 
 <style>
-.information::before {
+.information {
+  @apply w-full overflow-hidden;
+  transform: skewY(-7deg);
+  z-index: -1;
+}
+
+.information-content {
+  transform: skewY(7deg);
+}
+
+.t2::before {
   @apply bg-gray-200 absolute w-full;
-  height: 250%;
+  height: 100%;
+  transform: skewY(-7deg);
+  transform-origin: bottom left;
+  content: '';
+  z-index: -1;
+  top: 0px;
+}
+
+.page-ender::before {
+  @apply bg-gray-200 absolute w-full;
+  height: 150%;
   transform: skewY(-7deg);
   content: '';
   z-index: -1;
@@ -141,5 +186,21 @@ export default {
 
 .introduction {
   margin-bottom: -10rem;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

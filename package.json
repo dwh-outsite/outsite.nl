@@ -49,6 +49,6 @@
     "nuxt-purgecss": "^0.2.1",
     "prettier": "^1.16.4",
     "tailwind-heropatterns": "^0.0.7",
-    "tailwindcss": "^1.0.5"
+    "tailwindcss": "^1.4.6"
   }
 }
