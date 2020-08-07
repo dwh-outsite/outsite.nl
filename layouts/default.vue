@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-body">
     <nuxt />
 
     <footer id="contact" class="bg-gray-700 relative">

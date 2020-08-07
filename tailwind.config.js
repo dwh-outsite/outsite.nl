@@ -1,4 +1,4 @@
-const { colors } = require('tailwindcss/defaultTheme')
+const { colors, fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   prefix: '',
@@ -40,6 +40,9 @@ module.exports = {
       },
       fontSize: {
         mega: '10rem'
+      },
+      fontFamily: {
+        body: ['Source Sans Pro', ...fontFamily.sans]
       }
     },
     aspectRatio: {
