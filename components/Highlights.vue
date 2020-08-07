@@ -6,7 +6,7 @@
         <button
           class="
             bg-pink-500 rounded-full px-6 py-3 text-white shadow-lg font-semibold flex items-center
-            hover:bg-pink-400 text-lg mt-2
+            hover:bg-pink-400 text-lg mt-2 your-style
           "
         >
           {{ $t('highlights.more') }}
