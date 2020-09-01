@@ -1,14 +1,4 @@
 export default {
-  Daan: `
-  Hey hey, ik ben Daan. Twintig jaar oud en momenteel bezig met mijn bachelor Electrical Engineering hier in Delft. 
-  Zelf kom ik eigenlijk pas net meer dan een jaar op deze vereniging, maar ik heb in dat ene jaar erg veel plezier
-  beleefd aan de baravonden en andere activiteiten van DWH/Outsite.
-  Ik weet zelf hoe spannend het kan zijn om voor het eerst een bar als de onze binnen te stappen, en ik hoop dat ik
-  je kan helpen om die stap te durven zetten.
-  Als barbuddy stel ik je graag voor aan alle verschillende soorten mensen die onze vereniging zo op een avond komen
-  bezoeken. Ook kan ik je veel meer vertellen over wat wij als vereniging zoal doen qua activiteiten en wie weet zien
-  we je dan ook zonder barbuddy weer eens terug :)
-  `,
   Jeff: `
   Hoi, mijn naam is Jeff. Ik ben achter in de twintig en ik studeer Technische Informatica aan de TU Delft. Ik ben al
   een aantal jaar lid bij Outsite. Ik kom vaak naar de EatingOUT op dinsdagen, maar ik vind het ook leuk om op een
