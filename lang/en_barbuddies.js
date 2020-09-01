@@ -1,12 +1,4 @@
 export default {
-  Daan: `
-  Hey hey, I'm Daan. Twenty years old and currently doing my bachelor Electrical Engineering here in Delft. I have been
-  visiting DWH/Outsite for just over a year now, but in this one year I have had tons of fun on the bar nights and other
-  activities organized by the association. It can be difficult to get the courage to finally visit a bar like ours, and 
-  I know this from experience. I hope that I can help you make this first step. As a barbuddy I would like to introduce
-  you to all different kinds of people that visit our association on an evening. I can also tell you more about our
-  activities, so that maybe one day we will see you again, this time without a barbuddy :)
-  `,
   Jeff: `
   Hi, my name is Jeff. I'm in my late twenties, and I study Computer Science at TU Delft. I've been a member of Outsite
   for a few years now. I'm a regular at the EatingOUT on Tuesdays, but I'm happy to be your barbuddy on a Thursday. I
