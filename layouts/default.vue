@@ -19,10 +19,9 @@
         contact-address="Lange Geer 22<br />2611PV Delft"
       >
         <template v-slot:board-members>
-          <BoardMember :role="$t('footer.board.president')" name="Niv Bharos" email="voorzitter@outsite.nl" />
-          <BoardMember :role="$t('footer.board.secretary')" name="Ivo Brands" email="secretaris@outsite.nl" />
-          <BoardMember :role="$t('footer.board.treasurer')" name="Bouke Stoelinga" email="penningmeester@outsite.nl" />
-          <BoardMember :role="$t('footer.board.external_affairs')" name="Eva Pelk" email="extern@outsite.nl" />
+          <BoardMember :role="$t('footer.board.president')" name="Rick Donkers" email="voorzitter@outsite.nl" />
+          <BoardMember :role="$t('footer.board.secretary')" name="Charlie Verboom" email="secretaris@outsite.nl" />
+          <BoardMember :role="$t('footer.board.treasurer')" name="Felipe Moreas" email="penningmeester@outsite.nl" />
         </template>
       </Footer>
     </footer>
