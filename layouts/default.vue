@@ -21,7 +21,7 @@
         <template v-slot:board-members>
           <BoardMember :role="$t('footer.board.president')" name="Rick Donkers" email="voorzitter@outsite.nl" />
           <BoardMember :role="$t('footer.board.secretary')" name="Charlie Verboom" email="secretaris@outsite.nl" />
-          <BoardMember :role="$t('footer.board.treasurer')" name="Felipe Moreas" email="penningmeester@outsite.nl" />
+          <BoardMember :role="$t('footer.board.treasurer')" name="Felipe Moraes" email="penningmeester@outsite.nl" />
         </template>
       </Footer>
     </footer>
