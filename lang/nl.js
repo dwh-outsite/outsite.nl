@@ -28,7 +28,7 @@ export default {
       Al deze activiteiten worden mogelijk gemaakt door onze fantastische commissies en leden! De voornaamste manier om
       kennis te maken met de vereniging is door deel te nemen aan de KennisMakingsGroepen (KMG) of door gebruik te maken
       van het bar buddy systeem: Wij zorgen er dan voor dat er iemand klaar staat wanneer jij langskomt.`,
-    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 22:00</strong>'
+    invitation: 'Kom gerust langs op onze baravond: <br> <strong>Elke donderdag vanaf 19:00</strong>'
   },
   bulletPoints: [
     {
@@ -63,13 +63,13 @@ export default {
         banner_title: 'Wekelijkse open baravond',
         banner_subtitle: 'Leeftijdsgrens 28 jaar',
         title: 'Baravond',
-        date: 'Elke donderdag vanaf 22.00 uur'
+        date: 'Elke donderdag vanaf 19.00 uur'
       },
       eating_out: {
         banner_title: 'Wekelijkse eettafel',
         banner_subtitle: 'Alleen voor leden, aanmelden verplicht',
         title: 'EatingOUT',
-        date: 'Elke dinsdag om 19.00 uur'
+        date: 'Elke dinsdag om 18.30 uur'
       }
     }
   },
