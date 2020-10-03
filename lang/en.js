@@ -28,7 +28,7 @@ export default {
       These activities are all organized by our fantastic committees and members! The best way to become acquainted with
       Outsite is to take part in the introduction groups (which we call KMGs) or through the use of the bar buddy
       system: Where we will make sure there is someone ready to show you around and who could introduce you to others.`,
-    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 22:00</strong>'
+    invitation: 'Come by during one of our bar nights:<br> <strong>Every Thursday starting at 19:00</strong>'
   },
   bulletPoints: [
     {
@@ -62,13 +62,13 @@ export default {
         banner_title: 'Weekly open bar night',
         banner_subtitle: 'Age limit 28 years',
         title: 'Bar Night',
-        date: 'Every Thursday from 10pm'
+        date: 'Every Thursday from 7pm'
       },
       eating_out: {
         banner_title: 'Weekly dinner',
         banner_subtitle: 'Members only, registration required',
         title: 'EatingOUT',
-        date: 'Every Tuesday at 7pm'
+        date: 'Every Tuesday at 6.30pm'
       }
     }
   },
