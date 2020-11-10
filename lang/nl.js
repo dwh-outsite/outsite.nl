@@ -7,7 +7,7 @@ export default {
   menu: [
     { title: 'Home', url: localePath => localePath('index') },
     { title: 'Join Outsite', url: localePath => localePath('index') + '#join-outsite' },
-    { title: 'Reserveren', url: () => '/reserveer' },
+    { title: 'Reserveren', url: () => 'https://outsite.nl/reserveer' },
     { title: 'EatingOUT', url: localePath => localePath('index') + '#eatingout' },
     { title: 'Commissies', url: localePath => localePath('committees') },
     { title: 'Ervaringen', url: localePath => localePath('testimonials') },
