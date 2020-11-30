@@ -311,10 +311,7 @@ export default {
     `,
     fees: {
       full: 'Normaal (€ 48,50)',
-      discounted: `
-        Gereduceerd (€ 25,00) <strong>| OWee deal:</strong> voor de rest van dit jaar betaal je slechts 10 euro!
-        Vanaf volgend kalenderjaar geldt het normale tarief 
-      `
+      discounted: 'Gereduceerd (€ 25,00)'
     }
   }
 }
