@@ -142,7 +142,7 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('outofctrl@dwhdelft.nl', 'kmg', this.form)
+      submitFormToFirebase('kennismaken@dwhdelft.nl', 'kmg', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
