@@ -82,7 +82,7 @@ export default {
       together and much more!`,
       action: 'Join the introduction group',
       sign_up: 'Sign up for the introduction group',
-      next: `<strong>The next Introduction Group will start in September</strong>, sign up now! The KMG is open
+      next: `<strong>The next Introduction Group will start in March</strong>, sign up now! The KMG is open
       for young adults between 17 and 28 years.`
     },
     bar_buddy: {
@@ -214,7 +214,13 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Who would you like to meet?',
       membership_fee: 'Membership Fee (see below)',
-      iban: 'IBAN number for payment by direct debit'
+      iban: 'IBAN number for payment by direct debit',
+      availability: `I'm available on`,
+      availability_options: {
+        thursdays: 'Thursdays',
+        saturdays: 'Saturdays',
+        both: 'Both Thursdays and Saturdays'
+      }
     },
     placeholder: {
       name: 'Name',

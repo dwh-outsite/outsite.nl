@@ -82,7 +82,7 @@ export default {
         met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
-      next: `<strong>De volgende KennisMakingsGroep start in September</strong>, meld je nu aan!
+      next: `<strong>De volgende KennisMakingsGroep start eind maart</strong>, meld je nu aan!
         De KMG is bedoeld voor jongeren van 17 tot 28 jaar.`
     },
     bar_buddy: {
@@ -213,7 +213,13 @@ export default {
       pronouns: 'Pronouns',
       barbuddy: 'Met wie wil je afspreken?',
       membership_fee: 'Contributie (zie onderaan deze pagina)',
-      iban: 'IBAN nummer voor betaling via automatisch incasso'
+      iban: 'IBAN nummer voor betaling via automatisch incasso',
+      availability: 'Ik ben beschikbaar op',
+      availability_options: {
+        thursdays: 'Donderdagen',
+        saturdays: 'Zaterdagen',
+        both: 'Zowel donderdagen en zaterdagen'
+      }
     },
     placeholder: {
       name: 'Naam',

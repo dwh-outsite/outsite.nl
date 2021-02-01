@@ -79,6 +79,21 @@
             <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
           </p>
           <p class="form-element">
+            <label class="required">{{ $t('forms.label.availability') }}</label>
+            <label class="radio">
+              <input v-model="form.availability" type="radio" value="thursdays" />
+              {{ $t('forms.label.availability_options.thursdays') }}
+            </label>
+            <label class="radio">
+              <input v-model="form.availability" type="radio" value="saturdays" />
+              {{ $t('forms.label.availability_options.saturdays') }}
+            </label>
+            <label class="radio">
+              <input v-model="form.availability" type="radio" value="both" />
+              {{ $t('forms.label.availability_options.both') }}
+            </label>
+          </p>
+          <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
           </p>
@@ -115,6 +130,7 @@ export default {
         city: '',
         language: this.$i18n.locale === 'nl' ? 'dutch' : 'english',
         pronouns: '',
+        availability: 'both',
         remarks: ''
       },
       formStatus: 'start'
@@ -126,7 +142,7 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('kennismaken@dwhdelft.nl', 'kmg', this.form)
+      submitFormToFirebase('outofctrl@dwhdelft.nl', 'kmg', this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
