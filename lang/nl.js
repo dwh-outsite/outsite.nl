@@ -234,7 +234,7 @@ export default {
       address: 'Straat en Huisnummer',
       postal_code: 'Postcode (bijvoorbeeld 2611PV)',
       pronouns: 'bv. zij/haar, hij/hem, hen/hun',
-      iban: 'IBAN nummer'
+      iban: 'IBAN nummer (zonder spaties)'
     },
     buttons: {
       sign_up: 'Aanmelden',
@@ -246,7 +246,8 @@ export default {
       whatsapp: 'We voegen je zo snel mogelijk toe aan de groep!',
       contact_soon: 'We nemen zo snel mogelijk contact met je op!',
       membership: 'We sturen je binnenkort een bevestiging van je lidmaatschap.'
-    }
+    },
+    validation_message: 'Je hebt het formulier niet volledig (correct) ingevuld. Check nog even goed of alles klopt.'
   },
   footer: {
     whatsapp: {

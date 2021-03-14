@@ -34,30 +34,36 @@
           </div>
         </div>
         <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
+          <FormValidationMessage :errors="validationErrors" />
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
             <input v-model="form.name" :placeholder="$t('forms.placeholder.name')" type="text" required />
+            <FormValidation :errors="validationErrors" name="name" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
             <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
+            <FormValidation :errors="validationErrors" name="email" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.date_of_birth') }}</label>
             <input
-              v-model="form.dateOfBirth"
+              v-model="form.date_of_birth"
               :placeholder="$t('forms.placeholder.date_of_birth')"
               type="text"
               required
             />
+            <FormValidation :errors="validationErrors" name="date_of_birth" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.phone_number') }}</label>
-            <input v-model="form.phoneNumber" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
+            <input v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
+            <FormValidation :errors="validationErrors" name="phone_number" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.residence') }}</label>
             <input v-model="form.city" :placeholder="$t('forms.placeholder.residence')" type="text" />
+            <FormValidation :errors="validationErrors" name="residence" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
@@ -73,10 +79,12 @@
               <input v-model="form.language" type="radio" value="no_preference" />
               {{ $t('forms.label.languages.no_preference') }}
             </label>
+            <FormValidation :errors="validationErrors" name="language" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
+            <FormValidation :errors="validationErrors" name="pronouns" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.availability') }}</label>
@@ -92,10 +100,12 @@
               <input v-model="form.availability" type="radio" value="both" />
               {{ $t('forms.label.availability_options.both') }}
             </label>
+            <FormValidation :errors="validationErrors" name="availability" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+            <FormValidation :errors="validationErrors" name="remarks" />
           </p>
           <p class="mt-8 md:my-8 text-right">
             <button type="submit" class="button-pink">
@@ -113,26 +123,32 @@ import Zondicon from 'vue-zondicons'
 
 import Header from '~/components/Header'
 
-import submitFormToFirebase from '~/modules/firebase-submitter'
+import ReMemberForm from '~/modules/ReMemberForm'
+
+import FormValidation from '~/components/Form/FormValidation'
+import FormValidationMessage from '~/components/Form/FormValidationMessage'
 
 export default {
   components: {
     Header,
-    Zondicon
+    Zondicon,
+    FormValidation,
+    FormValidationMessage
   },
   data() {
     return {
       form: {
         name: '',
         email: '',
-        dateOfBirth: '',
-        phoneNumber: '',
+        date_of_birth: '',
+        phone_number: '',
         city: '',
         language: this.$i18n.locale === 'nl' ? 'dutch' : 'english',
         pronouns: '',
         availability: 'both',
         remarks: ''
       },
+      validationErrors: {},
       formStatus: 'start'
     }
   },
@@ -142,13 +158,16 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('kennismaken@dwhdelft.nl', 'kmg', this.form)
+      new ReMemberForm('kmg')
+        .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
-        .catch(() => {
-          alert('An error occurred. If this keeps happening, please send us an email.')
+        .catch(validationError => {
+          this.formStatus = 'validation-error'
+          this.validationErrors = validationError.errors()
+          window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
     }
   }

@@ -33,17 +33,21 @@
           </div>
         </div>
         <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
+          <FormValidationMessage :errors="validationErrors" />
           <p class="form-element">
             <label class="required">{{ $t('forms.label.firstname') }}</label>
             <input v-model="form.firstname" :placeholder="$t('forms.placeholder.firstname')" type="text" required />
+            <FormValidation :errors="validationErrors" name="firstname" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.initials') }}</label>
             <input v-model="form.initials" :placeholder="$t('forms.placeholder.initials')" type="text" required />
+            <FormValidation :errors="validationErrors" name="initials" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.lastname') }}</label>
             <input v-model="form.lastname" :placeholder="$t('forms.placeholder.lastname')" type="text" required />
+            <FormValidation :errors="validationErrors" name="lastname" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
@@ -55,34 +59,42 @@
               <input v-model="form.language" type="radio" value="english" />
               {{ $t('forms.label.languages.english') }}
             </label>
+            <FormValidation :errors="validationErrors" name="language" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.date_of_birth') }}</label>
             <input v-model="form.date_of_birth" :placeholder="$t('forms.placeholder.date_of_birth')" required />
+            <FormValidation :errors="validationErrors" name="date_of_birth" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.address') }}</label>
             <input v-model="form.address" :placeholder="$t('forms.placeholder.address')" required />
+            <FormValidation :errors="validationErrors" name="address" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.postal_code') }}</label>
             <input v-model="form.postal_code" :placeholder="$t('forms.placeholder.postal_code')" required />
+            <FormValidation :errors="validationErrors" name="postal_code" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.residence') }}</label>
             <input v-model="form.residence" :placeholder="$t('forms.placeholder.residence')" required />
+            <FormValidation :errors="validationErrors" name="residence" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
             <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
+            <FormValidation :errors="validationErrors" name="email" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.phone_number') }}</label>
-            <input v-model="form.phoneNumber" :placeholder="$t('forms.placeholder.phone_number')" required />
+            <input v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" required />
+            <FormValidation :errors="validationErrors" name="phone_number" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
+            <FormValidation :errors="validationErrors" name="pronouns" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.membership_fee') }}</label>
@@ -94,14 +106,17 @@
               <input v-model="form.membership_fee" type="radio" value="discounted" />
               <span v-html="$t('signup.fees.discounted')" />
             </label>
+            <FormValidation :errors="validationErrors" name="membership_fee" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.iban') }}</label>
             <input v-model="form.iban" :placeholder="$t('forms.placeholder.iban')" type="text" required />
+            <FormValidation :errors="validationErrors" name="iban" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+            <FormValidation :errors="validationErrors" name="remarks" />
           </p>
           <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
@@ -118,12 +133,17 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
-import submitFormToFirebase from '~/modules/firebase-submitter'
+import ReMemberForm from '~/modules/ReMemberForm'
 import Header from '~/components/Header'
+import FormValidation from '~/components/Form/FormValidation'
+import FormValidationMessage from '~/components/Form/FormValidationMessage'
+
 export default {
   components: {
     Header,
-    Zondicon
+    Zondicon,
+    FormValidation,
+    FormValidationMessage
   },
   data() {
     return {
@@ -137,26 +157,32 @@ export default {
         postal_code: '',
         residence: '',
         email: '',
-        phoneNumber: '',
+        phone_number: '',
         pronouns: '',
         membership_fee: 'full',
         iban: '',
         remarks: ''
       },
+      validationErrors: {},
       formStatus: 'start'
     }
   },
   methods: {
     submit(event) {
       event.preventDefault()
+
       this.formStatus = 'loading'
-      submitFormToFirebase('ledenadministratie@dwhdelft.nl', 'membership', this.form)
+
+      new ReMemberForm('membership')
+        .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
-        .catch(() => {
-          alert('An error occurred. If this keeps happening, please send us an email.')
+        .catch(validationError => {
+          this.formStatus = 'validation-error'
+          this.validationErrors = validationError.errors()
+          window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
     }
   }

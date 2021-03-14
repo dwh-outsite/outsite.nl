@@ -74,9 +74,11 @@
           </div>
         </div>
         <form v-if="formStatus !== 'finished'" @submit="submit" class="md:w-2/3 mx-4 md:mx-auto mt-8 md:my-12">
+          <FormValidationMessage :errors="validationErrors" />
           <p class="form-element">
             <label class="required">{{ $t('forms.label.name') }}</label>
             <input v-model="form.name" :placeholder="$t('forms.placeholder.name')" type="text" required />
+            <FormValidation :errors="validationErrors" name="name" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.language') }}</label>
@@ -92,18 +94,22 @@
               <input v-model="form.language" type="radio" value="no_preference" />
               {{ $t('forms.label.languages.no_preference') }}
             </label>
+            <FormValidation :errors="validationErrors" name="language" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.email') }}</label>
             <input v-model="form.email" :placeholder="$t('forms.placeholder.email')" type="email" required />
+            <FormValidation :errors="validationErrors" name="email" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.phone_number') }}</label>
-            <input v-model="form.phoneNumber" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
+            <input v-model="form.phone_number" :placeholder="$t('forms.placeholder.phone_number')" type="text" />
+            <FormValidation :errors="validationErrors" name="phone_number" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.pronouns') }}</label>
             <input v-model="form.pronouns" :placeholder="$t('forms.placeholder.pronouns')" type="text" />
+            <FormValidation :errors="validationErrors" name="pronouns" />
           </p>
           <p class="form-element">
             <label class="required">{{ $t('forms.label.barbuddy') }}</label>
@@ -115,10 +121,12 @@
               <input v-model="form.barbuddy" :value="buddy.name" :checked="buddy.selected" type="radio" />
               {{ buddy.name }}
             </label>
+            <FormValidation :errors="validationErrors" name="barbuddy" />
           </p>
           <p class="form-element">
             <label>{{ $t('forms.label.remarks') }}</label>
             <textarea v-model="form.remarks" :placeholder="$t('forms.placeholder.remarks')"></textarea>
+            <FormValidation :errors="validationErrors" name="remarks" />
           </p>
           <div id="recaptcha" />
           <p class="mt-8 md:my-8 text-right">
@@ -134,13 +142,17 @@
 
 <script>
 import Zondicon from 'vue-zondicons'
-import submitFormToFirebase from '~/modules/firebase-submitter'
+import ReMemberForm from '~/modules/ReMemberForm'
 import Header from '~/components/Header'
+import FormValidation from '~/components/Form/FormValidation'
+import FormValidationMessage from '~/components/Form/FormValidationMessage'
 
 export default {
   components: {
     Header,
-    Zondicon
+    Zondicon,
+    FormValidation,
+    FormValidationMessage
   },
   data() {
     return {
@@ -155,11 +167,12 @@ export default {
         name: '',
         language: this.$i18n.locale === 'nl' ? 'dutch' : 'english',
         email: '',
-        phoneNumber: '',
+        phone_number: '',
         pronouns: '',
         barbuddy: 'no_preference',
         remarks: ''
       },
+      validationErrors: {},
       formStatus: 'start'
     }
   },
@@ -176,13 +189,16 @@ export default {
 
       this.formStatus = 'loading'
 
-      submitFormToFirebase('kennismaken@dwhdelft.nl', 'barbuddy', this.form)
+      new ReMemberForm('barbuddy')
+        .submit(this.form)
         .then(() => {
           this.formStatus = 'finished'
           window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
-        .catch(() => {
-          alert('An error occurred. If this keeps happening, please send us an email.')
+        .catch(validationError => {
+          this.formStatus = 'validation-error'
+          this.validationErrors = validationError.errors()
+          window.scrollTo({ top: document.getElementById('form').offsetTop, behavior: 'smooth' })
         })
     }
   }

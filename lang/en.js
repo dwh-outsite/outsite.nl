@@ -235,7 +235,7 @@ export default {
       address: 'Address',
       postal_code: 'Postal code (for example 2611PV)',
       pronouns: 'e.g. she/her, he/him, they/them',
-      iban: 'IBAN number'
+      iban: 'IBAN number (no spaces)'
     },
     buttons: {
       sign_up: 'Sign up',
@@ -247,7 +247,8 @@ export default {
       whatsapp: `We'll add you to the group as soon as possible!`,
       contact_soon: 'We will contact you as soon as possible.',
       membership: 'We will send you an e-mail soon to confirm your membership.'
-    }
+    },
+    validation_message: 'You did not completely or correctly fill out the form. Please check if everything makes sense.'
   },
   footer: {
     whatsapp: {

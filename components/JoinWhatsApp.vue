@@ -22,30 +22,33 @@
                 class="bg-gray-200 rounded-lg block px-3 py-1 w-full mb-1"
                 required
               />
+              <FormValidation :errors="validationErrors" name="name" />
             </p>
             <p class="md:flex-1 md:mx-2">
               <label class="uppercase text-sm tracking-wide font-semibold block mb-1 required">
                 {{ $t('forms.label.phone_number') }}
               </label>
               <input
-                v-model="form.phoneNumber"
+                v-model="form.phone_number"
                 :placeholder="$t('forms.placeholder.phone_number')"
                 type="text"
                 class="bg-gray-200 rounded-lg block px-3 py-1 w-full mb-1"
                 required
               />
+              <FormValidation :errors="validationErrors" name="phone_number" />
             </p>
             <p class="md:flex-1 md:ml-2">
               <label class="uppercase text-sm tracking-wide font-semibold block mb-1 required">
                 {{ $t('forms.label.date_of_birth') }}
               </label>
               <input
-                v-model="form.dateOfBirth"
+                v-model="form.date_of_birth"
                 :placeholder="$t('forms.placeholder.date_of_birth')"
                 type="text"
                 class="bg-gray-200 rounded-lg block px-3 py-1 w-full mb-1"
                 required
               />
+              <FormValidation :errors="validationErrors" name="date_of_birth" />
             </p>
           </div>
 
@@ -86,12 +89,14 @@
 <script>
 import Zondicon from 'vue-zondicons'
 import WhatsAppLogo from '@/assets/images/whatsapp_logo.svg'
-import submitFormToFirebase from '~/modules/firebase-submitter'
+import ReMemberForm from '~/modules/ReMemberForm'
+import FormValidation from '~/components/Form/FormValidation'
 
 export default {
   components: {
     WhatsAppLogo,
-    Zondicon
+    Zondicon,
+    FormValidation
   },
   props: ['buttonText', 'buttonTarget'],
   data() {
@@ -100,9 +105,10 @@ export default {
       formStatus: 'ready',
       form: {
         name: '',
-        phoneNumber: '',
-        dateOfBirth: ''
-      }
+        phone_number: '',
+        date_of_birth: ''
+      },
+      validationErrors: {}
     }
   },
   methods: {
@@ -110,12 +116,14 @@ export default {
       event.preventDefault()
 
       this.formStatus = 'loading'
-      submitFormToFirebase('bestuur@outsite.nl', 'WhatsApp aanmelding', this.form)
+
+      new ReMemberForm('whatsapp')
+        .submit(this.form)
         .then(() => {
           this.state = 'success'
         })
-        .catch(() => {
-          this.state = 'failed'
+        .catch(validationError => {
+          this.validationErrors = validationError.errors()
         })
         .finally(() => {
           this.formStatus = 'ready'
