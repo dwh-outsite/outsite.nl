@@ -116,11 +116,11 @@ export default [
   },
   {
     author: {
-      name: 'Eva',
+      name: 'Dante',
       description: 'Outsite member for 2 year'
     },
     text: `
-    Heeyhey, my name is Eva. I came to Outsite during the OWee. I then did the introductory group and immediately
+    Heeyhey, my name is Dante. I came to Outsite during the OWee. I then did the introductory group and immediately
     made nice friends. Afterwards I often had a drink on the barevenings on Thursday, with the motto "not because
     I have to but because I can". I really like that there is a relaxed atmosphere at Outsite. I feel very 
     comfortable in that gay vibe and I am at Outsite at least once a week now. Besides the regular drinks, I

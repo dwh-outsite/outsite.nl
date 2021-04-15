@@ -118,11 +118,11 @@ export default [
   },
   {
     author: {
-      name: 'Eva',
+      name: 'Dante',
       description: 'Outsite lid voor 2 jaar'
     },
     text: `
-    Heeyhey, ik ben Eva. Zelf heb ik me ooit in de OWee ingeschreven bij Outsite. Ik heb toen de kennismakingsgroep
+    Heeyhey, ik ben Dante. Zelf heb ik me ooit in de OWee ingeschreven bij Outsite. Ik heb toen de kennismakingsgroep
     gedaan en meteen leuke vrienden ontmoet. Ik kwam daarna vaak borrelen op de donderdag, met het motto ‘niet omdat
     het moet maar omdat het kan’. Ik vind het heel fijn dat er bij Outsite een ongedwongen sfeer hangt. Ik voel me
     heel prettig in die gay vibe en ben er inmiddels elke week te vinden. Naast de reguliere borrels hou ik heel
