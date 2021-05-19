@@ -82,7 +82,7 @@ export default {
         met elkaar je coming-out verhalen (als je dat wil), je gaat langs een gay feest en nog veel meer!`,
       action: 'Doe mee aan de KMG',
       sign_up: 'Aanmelden voor de KMG',
-      next: `<strong>De volgende KennisMakingsGroep start eind maart</strong>, meld je nu aan!
+      next: `<strong>De volgende KennisMakingsGroep start in september</strong>, begin juli is er ook een leuke pre-KMG activiteit dus meld je nu aan!
         De KMG is bedoeld voor jongeren van 17 tot 28 jaar.`
     },
     bar_buddy: {
